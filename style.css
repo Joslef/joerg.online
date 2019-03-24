@@ -1,0 +1,143 @@
+body {
+	background: black;
+}
+.bigArea1 {
+	position: relative;
+	margin: 0 auto;
+	margin-bottom: 15px;
+	width: 99%;
+	height: 33vh;
+	top: 7px;
+	background: transparent ;
+	border: 0.5px solid #80ff00;
+	border-radius: 10px;
+}
+.mainImage {
+	border-radius: 50%;
+	height: 130px;
+	width: 130px;
+	position: absolute;
+  top: 33%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+	}
+h1 {
+	color: white;
+	font-family: monospace;
+	font-size: 25px;
+	position: absolute;
+  top: 63%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+.socialMediaBlock {
+	position: absolute;
+	border-radius: 5px;
+	width: 400px;
+	height: 60px;
+	background: transparent;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	top: 85%;
+}
+.socialMediaIcons {
+	position: relative;
+	top: 13px;
+	margin-left: 19%;
+	transition: ease 0.1s
+}
+.socialMediaIcons:hover {
+	transform: rotate(-15deg);
+}
+.bigArea2 {
+	position: relative;
+	margin-top: 0 auto;
+	width: 99%;
+	height: 63vh;
+	top: 7px;
+	left: 7px;
+	background: black;
+	border: 0.5px solid #80ff00;
+	border-radius: 10px;
+}
+.menu{
+	position: absolute;
+	margin: 0 auto;
+	left: 7px;
+	right: 7px;
+	height: 50px;
+	top: 10px;
+	background: transparent;
+	border-radius: 3px;
+	display: flex;
+  align-items: center;
+  justify-content: left;
+	flex-direction: row;
+}
+.menuBlock {
+	top: 200px;
+	height: 50px;
+	width: 200px;
+	display: inline;
+  align-items: center;
+  justify-content: center;
+	flex-direction: row;
+	border-radius: 10px;
+	font-family: monospace;
+	color: white;
+	font-size: 20px;
+	background-image:  linear-gradient(white, white);
+	background-repeat: no-repeat;
+	transition: background-size 0.5s, color 0.5s;
+	background-position: 0% 100%;
+}
+.menuBlock:hover {
+	/*background: #80ff00;*/
+	color: black;
+	font-size: 25px;
+	background-size: 100% 100%
+}
+.test {
+	position: relative;
+  display: block;
+  padding: 10px 10px;
+  border: 5px solid #B17461;
+  color: #B17461;
+  font-size: 50px;
+  font-family: arial;
+  background-image: linear-gradient(#B17461, #B17461);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  transition: background-size 0.5s, color 0.5s;
+	top: 150px;
+}
+.test:hover {
+  background-size: 100% 100%;
+  color: #fff;
+}
+.to-right {
+  background-position: 0% 50%;
+}
+
+.slideIn {
+	animation-name: slidein;
+	animation-delay: 5s;
+	animation-duration: 1s;
+  animation-fill-mode: forwards;
+	position: relative;
+		
+}
+@keyframes slidein {
+  500ms {
+    right: 100%;
+		bottom: 15px;
+  }
+  1s {
+    right: 5%;
+    bottom: 15px;
+  }
+}
