@@ -125,60 +125,28 @@ p {
 	background-color: #fff;
 	color: #818181;
 	padding: 15px;
-	margin-bottom: 10px;
+	margin: 20px 0px;
 	border-radius: 10px;
 	transition: 0.5s;
 }
 
 /* start blog entry */
-.blog {
-	background-color: #fff;
-	color: #818181;
-	padding: 15px;
-	margin: 0px 20px 10px 0px;
-	border-radius: 10px;
-	transition: 0.5s;
-	position: absolute;
-}
 
-.blogDate {
-	position: relative;
+h2 {
 	font-family: 'Megrim', cursive;
-	font-weight: bold;
 	font-size: 15pt;
 	color: #20bcd5;
-	text-align: center;
-	border: 2px solid lightgray;
-	padding: 5px 5px;
-	margin: 5px 5px 0px 0px;
-	border-radius: 30px;
-	float: right;
-}
-
-.blogTopic {
-	position: relative;
-	font-family: 'Reenie Beanie', cursive;
-	font-weight: 500;
-	font-size: 30pt;
-	color: black;
-	text-align: center;
-	padding: 0px 10px;
-	margin-top: 10px;
-	float: left;
-}
-
-.blogContent {
-	position: relative;
+	text-align: right;
+	padding: 18px 0 18px 0;
+	margin: 0 0 10px 0;
 	background-color: #fff;
-	color: #818181;
-	padding: 15px;
-	margin-top: 10px;
-	transition: 0.5s;
-	float: left;
-	border: 2px solid #efefef;
-	border-radius: 10px;
+}
 
-	display: block;
+h2 span {
+	border: 2px solid lightgray;
+	padding: 10px 20px;
+	border-radius: 30px;
+	background-color: #fff;
 }
 
 /* end blog entry */
@@ -287,9 +255,10 @@ a {
 
 .copyright {
 	font-size: 8pt;
-	text-align: right;
+
 	padding-bottom: 10px;
 	color: #818181;
+	position: relative;
 }
 
 /* start scrollbar */
