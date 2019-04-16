@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>welcome to joerg.online</title>
+		<link rel="shortcut icon" type="image/png" href="icons/favicon.ico" />
+		<link href="css/styleDark.css" rel="stylesheet" type="text/css" />
+		<link href="css/styleLight.css" rel="stylesheet" type="text/css" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Cutive+Mono|Major+Mono+Display|Megrim|Reenie+Beanie"
+			rel="stylesheet"
+		/>
+	</head>
+
+	<body>
+		<!-- sidepanel start -->
+
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+				>&times;</a
+			>
+			<a href="index.html">Home</a>
+			<a href="blog.html">Blog</a>
+			<a href="#">Links</a>
+			<a href="#">Contact</a>
+		</div>
+
+		<!-- sidepanel end -->
+
+		<!-- Add all page content inside the div with class "main" if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+
+		<div id="main">
+			<!-- header start -->
+
+			<div class="darkmode">
+				<a href="#" onclick="changeCSS('css/styleDark.css', 2)"> 🌑</a>
+			</div>
+			<div class="lightmode">
+				<a href="#" onclick="changeCSS('css/styleLight.css', 2)"> ☀️</a>
+			</div>
+
+			<div id="header" class="section">
+				<a href="#"><div id="lines" onclick="openNav()"></div></a>
+				<img alt="" class="img-circle" src="pictures/profilbild.png" />
+				<p>welcome to my blog!</p>
+			</div>
+
+			<!-- header end -->
+
+			<!-- What is this blog about section start -->
+
+			<div class="section" id="intro">
+				<h1><span>What is this blog about?</span></h1>
+				<p>
+					It's finally here, my <strong>blog!</strong> As I mentioned
+					before, this is a page all about programming, better said
+					about learning programming. Of course I try to update my
+					blog as often as possible! Not only can you see my progress,
+					it's also for you to learn basic principles from JS, HTML
+					and CSS.
+				</p>
+				<br />
+			</div>
+
+			<!-- What is this blog about section end -->
+
+			<!-- blog entry section start -->
+
+			<div class="blog">
+				<div class="blogDate">
+					Tuesday, 04/16/19
+				</div>
+				<div class="blogTopic">
+					1st entry! ...or what the heck am I doing?!?
+				</div>
+				<div class="blogContent">
+					Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+					Placeat tempore, deleniti non voluptate culpa
+					exercitationem. Enim et velit provident voluptate modi
+					tenetur, alias obcaecati error possimus eligendi beatae?
+					Eaque, hic.Lorem ipsum dolor sit, amet consectetur
+					adipisicing elit. Placeat tempore, deleniti non voluptate
+					culpa exercitationem. Enim et velit provident voluptate modi
+					tenetur, alias obcaecati error possimus eligendi beatae?
+					Eaque, hic.Lorem ipsum dolor sit, amet consectetur
+					adipisicing elit. Placeat tempore, deleniti non voluptate
+					culpa exercitationem. Enim et velit provident voluptate modi
+					tenetur, alias obcaecati error possimus eligendi beatae?
+					Eaque, hic.Lorem ipsum dolor sit, amet consectetur
+					adipisicing elit. Placeat tempore, deleniti non voluptate
+					culpa exercitationem. Enim et velit provident voluptate modi
+					tenetur, alias obcaecati error possimus eligendi beatae?
+					Eaque, hic.Lorem ipsum dolor sit, amet consectetur
+					adipisicing elit. Placeat tempore, deleniti non voluptate
+					culpa exercitationem. Enim et velit provident voluptate modi
+					tenetur, alias obcaecati error possimus eligendi beatae?
+					Eaque, hic.
+				</div>
+			</div>
+
+			<!-- blog entry section end -->
+
+			<div class="copyright">
+				This is a classicair production &copy; 2019
+			</div>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>
