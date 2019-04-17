@@ -6,11 +6,68 @@ html {
 body {
 	font-family: 'Cutive Mono', monospace;
 	font-size: 15pt;
-	background-color: #0d0d0d;
+	background-color: #818181;
+	color: #efefef;
 	padding: 0px;
 	margin: 0;
 }
 
+a {
+	text-decoration: none;
+	color: white;
+}
+
+p {
+	padding: 0;
+	margin: 0;
+}
+
+/* start head in every section block - centered */
+h1 {
+	font-family: 'Megrim', cursive;
+	font-size: 15pt;
+	color: #20bcd5;
+	text-align: center;
+	padding: 18px 0 18px 0;
+	margin: 0 0 10px 0;
+}
+
+h1 span {
+	border: 2px solid #818181;
+	padding: 10px 20px;
+	border-radius: 30px;
+}
+/* end head in every section block - centered */
+
+/* start head in every section block - right (e.g. date in blog) */
+h2 {
+	font-family: 'Megrim', cursive;
+	font-size: 15pt;
+	color: #20bcd5;
+	text-align: right;
+	padding: 18px 0 18px 0;
+	margin: 0 0 10px 0;
+}
+
+h2 span {
+	border: 2px solid #818181;
+	padding: 10px 20px;
+	border-radius: 30px;
+}
+/* end head in every section block - right (e.g. date in blog) */
+
+/* start block element */
+.section {
+	background-color: black;
+	color: #efefef;
+	padding: 15px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+	transition: 0.5s;
+}
+/* end block element */
+
+/* start burger menu */
 #lines {
 	position: absolute;
 	top: 25px;
@@ -22,18 +79,21 @@ body {
 	width: 19px;
 	transition: 0.5s;
 }
+/* end burger menu */
 
-.lightmode {
+/* start buttons top right corner for darkmode */
+#lightmode {
 	position: absolute;
 	right: 20px;
 	top: 45px;
 }
 
-.darkmode {
+#darkmode {
 	position: absolute;
 	right: 20px;
 	top: 17px;
 }
+/* end buttons top right corner for darkmode */
 
 /* start sidepanel */
 
@@ -45,7 +105,7 @@ body {
 	z-index: 1; /* Stay on top */
 	top: 0; /* Stay at the top */
 	left: 0;
-	background-color: #111; /* Black*/
+	background-color: black; /* Black*/
 	overflow-x: hidden; /* Disable horizontal scroll */
 	padding-top: 60px; /* Place content 60px from the top */
 	transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -65,7 +125,7 @@ body {
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-	color: #f1f1f1;
+	color: #efefef;
 }
 
 /* Position and style the close button (top right corner) */
@@ -81,7 +141,7 @@ body {
 #main {
 	transition: margin-left 0.5s;
 	padding: 8px;
-	background-color: #1d1d1d;
+	background-color: #818181;
 	transition: 0.5s;
 }
 
@@ -96,54 +156,14 @@ body {
 }
 /* end sidepanel */
 
-h1 {
-	font-family: 'Megrim', cursive;
-	font-size: 15pt;
-	color: #20bcd5;
-	text-align: center;
-	padding: 18px 0 18px 0;
-	margin: 0 0 10px 0;
-}
-
-h1 span {
-	border: 2px solid lightgray;
-	padding: 10px 20px;
-	border-radius: 30px;
-}
-
-p {
-	padding: 0;
-	margin: 0;
-}
-
+/* start section on top of page */
 .img-circle {
 	border: 3px solid white;
 	border-radius: 50%;
 }
 
-.section {
-	background-color: black;
-	color: #818181;
-	padding: 15px;
-	margin-bottom: 10px;
-	border-radius: 10px;
-	transition: 0.5s;
-}
-
-/* start blog entry */
-.sectionBlog {
-	background-color: #fff;
-	color: #818181;
-	padding: 15px;
-	margin-bottom: 10px;
-	border-radius: 10px;
-	transition: 0.5s;
-	height: 300px;
-}
-/* end blog entry */
-
 #intro {
-	color: #818181;
+	color: #efefef;
 	font-family: 'Reenie Beanie', cursive;
 	font-size: 20pt;
 	text-align: justify;
@@ -176,7 +196,9 @@ p {
 	text-align: right;
 	margin-top: 10px;
 }
+/* end section on top of page */
 
+/* start progress area */
 li {
 	margin-bottom: 15px;
 	font-weight: bold;
@@ -190,11 +212,11 @@ progress {
 	width: 70%;
 	height: 20px;
 	color: #3fb6b2;
-	background: #818181;
+	background: #efefef;
 }
 
 progress::-webkit-progress-bar {
-	background: #818181;
+	background: #efefef;
 }
 
 progress::-webkit-progress-value {
@@ -203,9 +225,11 @@ progress::-webkit-progress-value {
 
 progress::-moz-progress-bar {
 	color: #3fb6b2;
-	background: #818181;
+	background: #efefef;
 }
+/* end progress area */
 
+/* start class for smiley */
 .face {
 	transform: scale(0.4);
 	margin: 0 auto;
@@ -213,8 +237,10 @@ progress::-moz-progress-bar {
 	margin-top: -35px;
 	margin-bottom: -25px;
 }
+/* end class for smiley */
 
-#contacts img {
+/* start follow me section */
+.contacts img {
 	height: 50px;
 	width: 50px;
 	margin-left: 7px;
@@ -226,12 +252,7 @@ progress::-moz-progress-bar {
 	/* end transition */
 }
 
-a {
-	text-decoration: none;
-	color: white;
-}
-
-#contacts img:hover {
+.contacts img:hover {
 	/* start transition */
 	top: -2px;
 	/* end transition */
@@ -240,19 +261,22 @@ a {
 	/* end box shadow */
 }
 
-#contacts {
+.contacts {
 	text-align: center;
 }
+/* end follow me section */
 
+/* start copyright at end of page */
 .copyright {
 	font-size: 8pt;
-	text-align: right;
 	padding-bottom: 10px;
-	color: grey;
+	color: black;
+	position: relative;
+	text-align: right;
 }
+/* end copyright at end of page */
 
 /* start scrollbar */
-
 ::-webkit-scrollbar {
 	width: 15px;
 }

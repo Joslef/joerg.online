@@ -15,7 +15,6 @@
 
 	<body>
 		<!-- sidepanel start -->
-
 		<div id="mySidenav" class="sidenav">
 			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
 				>&times;</a
@@ -25,18 +24,15 @@
 			<a href="#">Links</a>
 			<a href="#">Contact</a>
 		</div>
-
 		<!-- sidepanel end -->
 
 		<!-- Add all page content inside the div with class "main" if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
-
 		<div id="main">
 			<!-- header start -->
-
-			<div class="darkmode">
+			<div id="darkmode">
 				<a href="#" onclick="changeCSS('css/styleDark.css', 2)"> 🌑</a>
 			</div>
-			<div class="lightmode">
+			<div id="lightmode">
 				<a href="#" onclick="changeCSS('css/styleLight.css', 2)"> ☀️</a>
 			</div>
 
@@ -45,11 +41,9 @@
 				<img alt="" class="img-circle" src="pictures/profilbild.png" />
 				<p>welcome to joerg.online</p>
 			</div>
-
 			<!-- header end -->
 
 			<!-- About Me section start -->
-
 			<div class="section" id="intro">
 				<h1><span>About Me</span></h1>
 				<p>
@@ -73,11 +67,24 @@
 					courage to continue that counts.” Winston S. Churchill
 				</p>
 			</div>
-
 			<!-- About Me section end -->
 
-			<!-- My Coding Tools section start -->
+			<!-- my blog section start -->
+			<div class="section" id="intro">
+				<h1><span>What is my blog about?</span></h1>
+				<p>
+					It's finally here, my <strong>blog!</strong> As I mentioned
+					before, this is a page all about programming, better said
+					about learning programming. Of course I try to update my
+					blog as often as possible! Not only can you see my progress,
+					it's also for you to learn basic principles from JS, HTML
+					and CSS.
+				</p>
+				<br />
+			</div>
+			<!-- my blog section end -->
 
+			<!-- My Coding Tools section start -->
 			<div class="section light-mode">
 				<h1><span>My Coding Tools</span></h1>
 				<ul>
@@ -102,11 +109,9 @@
 					<br />
 				</ul>
 			</div>
-
 			<!-- My Coding Tools section end -->
 
 			<!-- My Skills section start -->
-
 			<div class="section">
 				<h1><span>My Skills</span></h1>
 				<ul>
@@ -128,24 +133,13 @@
 					</li>
 				</ul>
 			</div>
-
 			<!-- My Skills section end -->
 
-			<!-- Media section start -->
-
-			<div class="section">
-				<h1><span>My Media</span></h1>
-			</div>
-
-			<!-- Media section end -->
-
 			<!-- Form section start -->
-
 			<div class="section">
 				<h1><span>Contact Me</span></h1>
 				<svg class="face" height="100" width="100">
 					<!-- I have to put the email link on every circle element, because the link area is too big otherwise-->
-
 					<a href="mailto:joerg.stoepel@googlemail.com">
 						<circle cx="50" cy="50" r="50" fill="#FDD835" />
 					</a>
@@ -171,12 +165,10 @@
 					</a>
 				</svg>
 			</div>
-
 			<!-- Form section end -->
 
 			<!-- Contacts section start -->
-
-			<div class="section" id="contacts">
+			<div class="section contacts">
 				<h1><span>Follow Me</span></h1>
 				<div>
 					<a href="https://www.linkedin.com/in/joergstoepel/">
@@ -193,9 +185,7 @@
 					</a>
 				</div>
 			</div>
-
 			<!-- Contacts section end -->
-
 			<div class="copyright">
 				This is a classicair production &copy; 2019
 			</div>
