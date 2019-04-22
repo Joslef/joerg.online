@@ -18,6 +18,8 @@ a {
 }
 
 p {
+	font-family: sans-serif;
+	text-align: justify;
 	padding: 0;
 	margin: 0;
 }
@@ -162,7 +164,7 @@ h2 span {
 	border-radius: 50%;
 }
 
-#intro {
+#introText {
 	color: #efefef;
 	font-family: 'Reenie Beanie', cursive;
 	font-size: 20pt;
@@ -192,6 +194,7 @@ h2 span {
 }
 
 #quote {
+	font-family: 'Reenie Beanie', cursive;
 	font-size: 20pt;
 	text-align: right;
 	margin-top: 10px;
@@ -202,6 +205,7 @@ h2 span {
 li {
 	margin-bottom: 15px;
 	font-weight: bold;
+	font-family: 'Cutive Mono', monospace;
 }
 
 ul p {

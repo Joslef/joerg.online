@@ -4,7 +4,6 @@ html {
 }
 
 body {
-	font-family: 'Cutive Mono', monospace;
 	font-size: 15pt;
 	background-color: #efefef;
 	color: #818181;
@@ -15,13 +14,6 @@ body {
 a {
 	text-decoration: none;
 	color: #818181;
-}
-
-p {
-	font-family: sans-serif;
-	text-align: justify;
-	padding: 0;
-	margin: 0;
 }
 
 /* start head in every section block - centered */
@@ -60,12 +52,25 @@ h2 span {
 
 /* start topic of blog sections */
 h3 {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 28pt;
 	color: black;
 	text-align: left;
 	padding: 0 0 0 0;
 	margin: 20px 0 30px 0;
 }
 /* end topic of blog sections */
+
+/* start font for blog content text */
+.textBlog {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 20pt;
+	text-align: justify;
+	line-height: 25pt;
+	padding: 0;
+	margin: 0;
+}
+/* end font for blog content text */
 
 /* start block element */
 .section {
@@ -173,10 +178,10 @@ h3 {
 	border-radius: 50%;
 }
 
-#intro {
+#introText {
 	color: #818181;
 	font-family: 'Reenie Beanie', cursive;
-	font-size: 20pt;
+	font-size: 25pt;
 	text-align: justify;
 }
 
@@ -203,7 +208,8 @@ h3 {
 }
 
 #quote {
-	font-size: 20pt;
+	font-family: 'Reenie Beanie', cursive;
+	font-size: 25pt;
 	text-align: right;
 	margin-top: 10px;
 }
@@ -213,6 +219,7 @@ h3 {
 li {
 	margin-bottom: 15px;
 	font-weight: bold;
+	font-family: 'Cutive Mono', monospace;
 }
 
 ul p {
