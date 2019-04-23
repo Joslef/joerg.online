@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>tools</title>
+		<link rel="shortcut icon" type="image/png" href="icons/favicon.ico" />
+		<link href="css/styleDark.css" rel="stylesheet" type="text/css" />
+		<link href="css/styleLight.css" rel="stylesheet" type="text/css" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Cutive+Mono|Major+Mono+Display|Megrim|Reenie+Beanie|Quicksand"
+			rel="stylesheet"
+		/>
+	</head>
+
+	<body>
+		<!-- sidepanel start -->
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+				>&times;</a
+			>
+			<a href="index.html">Home</a>
+			<a href="blog.html">Blog</a>
+			<a href="tools.html">Tools</a>
+			<a href="skills.html">Skills</a>
+			<a href="mailto:joerg.stoepel@googlemail.com">Contact</a>
+		</div>
+		<!-- sidepanel end -->
+
+		<!-- Add all page content inside the div with class "main" if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+		<div id="main">
+			<!-- header start -->
+			<div id="darkmode">
+				<a href="#" onclick="changeCSS('css/styleDark.css', 2)"> 🌑</a>
+			</div>
+			<div id="lightmode">
+				<a href="#" onclick="changeCSS('css/styleLight.css', 2)"> ☀️</a>
+			</div>
+
+			<div id="header" class="section">
+				<a href="#"><div id="lines" onclick="openNav()"></div></a>
+				<img alt="" class="img-circle" src="pictures/profilbild.png" />
+				<p>tools</p>
+			</div>
+			<!-- header end -->
+
+			<!-- My Coding Tools section start -->
+			<div class="section">
+				<h1><span>My Coding Tools</span></h1>
+				<ul>
+					<li><a href="https://repl.it">Repl.it</a></li>
+					<p>powerful playground for starting to code</p>
+					<br />
+					<li>
+						<a href="https://fonts.google.com/">Google Fonts</a>
+					</li>
+					<p>dont spend too much time on fonts</p>
+					<br />
+					<li><a href="https://www.w3schools.com/">w3schools</a></li>
+					<p>nice to look up with short examples</p>
+					<br />
+					<li>
+						<a href="https://www.freecodecamp.org/">freecodecamp</a>
+					</li>
+					<p>this is where it all startet, please support them</p>
+					<br />
+					<li><a href="https://www.sololearn.com/">sololearn</a></li>
+					<p>small lessons like a game you can compete with others</p>
+					<br />
+				</ul>
+			</div>
+			<!-- My Coding Tools section end -->
+
+			<div class="copyright">
+				This is a classicair production &copy; 2019
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
