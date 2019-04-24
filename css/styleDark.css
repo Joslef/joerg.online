@@ -14,14 +14,7 @@ body {
 
 a {
 	text-decoration: none;
-	color: white;
-}
-
-p {
-	font-family: sans-serif;
-	text-align: justify;
-	padding: 0;
-	margin: 0;
+	color: #efefef;
 }
 
 /* start head in every section block - centered */
@@ -47,8 +40,8 @@ h2 {
 	font-size: 15pt;
 	color: #20bcd5;
 	text-align: right;
-	padding: 18px 0 18px 0;
-	margin: 0 0 10px 0;
+	padding: 15px 0 0 0;
+	margin: 0 0 0 0;
 }
 
 h2 span {
@@ -57,6 +50,82 @@ h2 span {
 	border-radius: 30px;
 }
 /* end head in every section block - right (e.g. date in blog) */
+
+/* start topic of blog sections */
+h3 {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 28pt;
+	color: white;
+	text-align: left;
+	padding: 0 0 0 0;
+	margin: 15px 0 5px 0;
+}
+/* end topic of blog sections */
+
+/* start font for blog content text */
+.textBlog {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 20pt;
+	text-align: justify;
+	line-height: 25pt;
+	padding: 0;
+	margin: 0;
+}
+/* end font for blog content text */
+
+/* start code tags in blog */
+.codeTagJs {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 10pt;
+	text-align: left;
+	line-height: 25pt;
+	color: white;
+	background-color: #f7df1e;
+	border-radius: 30px;
+	border-color: #f7df1e;
+	padding: 3px 10px 5px;
+	margin: 0 0 0 0;
+}
+
+.codeTagHtml {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 10pt;
+	text-align: left;
+	line-height: 25pt;
+	color: white;
+	background-color: #e34c26;
+	border-radius: 30px;
+	border-color: #e34c26;
+	padding: 3px 10px 5px;
+	margin: 0 0 0 0;
+}
+
+.codeTagCss {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 10pt;
+	text-align: left;
+	line-height: 25pt;
+	color: white;
+	background-color: #2860ba;
+	border-radius: 30px;
+	border-color: #2860ba;
+	padding: 3px 10px 5px;
+	margin: 0 0 0 0;
+}
+
+.codeTagAnything {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 10pt;
+	text-align: left;
+	line-height: 25pt;
+	color: black;
+	background-color: #efefef;
+	border-radius: 30px;
+	border-color: #efefef;
+	padding: 3px 10px 5px;
+	margin: 0 0 0 0;
+}
+/* end code tags in blog */
 
 /* start block element */
 .section {
@@ -87,7 +156,7 @@ h2 span {
 #lightmode {
 	position: absolute;
 	right: 20px;
-	top: 45px;
+	top: 53px;
 }
 
 #darkmode {
@@ -162,7 +231,6 @@ h2 span {
 #img-circle {
 	border: 3px solid #efefef;
 	border-radius: 50%;
-	display: block;
 	width: 80px;
 	height: 80px;
 	margin: auto;
@@ -171,7 +239,7 @@ h2 span {
 #introText {
 	color: #efefef;
 	font-family: 'Reenie Beanie', cursive;
-	font-size: 20pt;
+	font-size: 25pt;
 	text-align: justify;
 }
 
@@ -182,7 +250,7 @@ h2 span {
 	font-size: 25pt;
 	font-weight: bold;
 	text-align: center;
-	padding: 15px;
+	padding: 15px 15px 23px 15px;
 	margin-bottom: 20px;
 	border-radius: 10px;
 	transition: 0.5s;
@@ -190,7 +258,7 @@ h2 span {
 
 #quote {
 	font-family: 'Reenie Beanie', cursive;
-	font-size: 20pt;
+	font-size: 25pt;
 	text-align: right;
 	margin-top: 10px;
 }
@@ -227,16 +295,6 @@ progress::-moz-progress-bar {
 	background: #efefef;
 }
 /* end progress area */
-
-/* start class for smiley */
-.face {
-	transform: scale(0.4);
-	margin: 0 auto;
-	display: block;
-	margin-top: -35px;
-	margin-bottom: -25px;
-}
-/* end class for smiley */
 
 /* start follow me section */
 .contacts img {

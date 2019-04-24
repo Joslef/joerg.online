@@ -155,7 +155,7 @@ h3 {
 #lightmode {
 	position: absolute;
 	right: 20px;
-	top: 45px;
+	top: 53px;
 }
 
 #darkmode {
@@ -249,7 +249,7 @@ h3 {
 	font-size: 25pt;
 	font-weight: bold;
 	text-align: center;
-	padding: 15px;
+	padding: 15px 15px 23px 15px;
 	margin-bottom: 20px;
 	border-radius: 10px;
 	transition: 0.5s;
