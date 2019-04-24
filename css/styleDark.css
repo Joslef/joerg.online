@@ -159,9 +159,13 @@ h2 span {
 /* end sidepanel */
 
 /* start section on top of page */
-.img-circle {
-	border: 3px solid white;
+#img-circle {
+	border: 3px solid #efefef;
 	border-radius: 50%;
+	display: block;
+	width: 80px;
+	height: 80px;
+	margin: auto;
 }
 
 #introText {
@@ -172,25 +176,16 @@ h2 span {
 }
 
 #header {
-	background-image: url('../pictures/background.png');
-	background-size: cover;
-}
-
-#header img {
-	display: block;
-	width: 80px;
-	height: 80px;
-	margin: auto;
-}
-
-#header p {
+	background-image: linear-gradient(to right, #5c258d, #4389a2);
+	color: #efefef;
 	font-family: 'Megrim', cursive;
 	font-size: 25pt;
-	color: black;
-	padding-top: 10px;
-	margin: 0;
 	font-weight: bold;
 	text-align: center;
+	padding: 15px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+	transition: 0.5s;
 }
 
 #quote {

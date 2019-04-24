@@ -227,9 +227,12 @@ h3 {
 /* end sidepanel */
 
 /* start section on top of page */
-.img-circle {
-	border: 3px solid white;
+#img-circle {
+	border: 3px solid #818181;
 	border-radius: 50%;
+	width: 80px;
+	height: 80px;
+	margin: auto;
 }
 
 #introText {
@@ -240,25 +243,16 @@ h3 {
 }
 
 #header {
-	background-image: url('../pictures/background.png');
-	background-size: cover;
-}
-
-#header img {
-	display: block;
-	width: 80px;
-	height: 80px;
-	margin: auto;
-}
-
-#header p {
+	background-image: linear-gradient(to right, #70e1f5, #ffd194);
+	color: #818181;
 	font-family: 'Megrim', cursive;
 	font-size: 25pt;
-	color: #818181;
-	padding-top: 10px;
-	margin: 0;
 	font-weight: bold;
 	text-align: center;
+	padding: 15px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+	transition: 0.5s;
 }
 
 #quote {
@@ -300,16 +294,6 @@ progress::-moz-progress-bar {
 	background: #818181;
 }
 /* end progress area */
-
-/* start class for smiley */
-.face {
-	transform: scale(0.4);
-	margin: 0 auto;
-	display: block;
-	margin-top: -35px;
-	margin-bottom: -25px;
-}
-/* end class for smiley */
 
 /* start follow me section */
 .contacts img {
