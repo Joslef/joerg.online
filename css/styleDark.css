@@ -4,7 +4,7 @@ html {
 }
 
 body {
-	font-family: 'Cutive Mono', monospace;
+	font-family: 'Quicksand', sans-serif;
 	font-size: 15pt;
 	background-color: #818181;
 	color: #efefef;
@@ -143,8 +143,8 @@ h3 {
 	position: absolute;
 	top: 25px;
 	left: 25px;
-	border-bottom: 8px double black;
-	border-top: 2px solid black;
+	border-bottom: 8px double white;
+	border-top: 2px solid white;
 	content: '';
 	height: 3px;
 	width: 19px;
@@ -236,13 +236,6 @@ h3 {
 	margin: auto;
 }
 
-#introText {
-	color: #efefef;
-	font-family: 'Reenie Beanie', cursive;
-	font-size: 25pt;
-	text-align: justify;
-}
-
 #header {
 	background-image: linear-gradient(to right, #5c258d, #4389a2);
 	color: #efefef;
@@ -257,8 +250,8 @@ h3 {
 }
 
 #quote {
-	font-family: 'Reenie Beanie', cursive;
-	font-size: 25pt;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 20pt;
 	text-align: right;
 	margin-top: 10px;
 }
@@ -268,11 +261,11 @@ h3 {
 li {
 	margin-bottom: 15px;
 	font-weight: bold;
-	font-family: 'Cutive Mono', monospace;
+	font-family: 'Quicksand', sans-serif;
 }
 
 ul p {
-	font-family: 'Cutive Mono', monospace;
+	font-family: 'Quicksand', sans-serif;
 }
 
 progress {
