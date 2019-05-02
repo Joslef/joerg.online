@@ -13,8 +13,8 @@ body {
 }
 
 a {
-	text-decoration: none;
 	color: #efefef;
+	text-decoration: none;
 }
 
 /* start head in every section block - centered */
@@ -34,13 +34,13 @@ h1 span {
 }
 /* end head in every section block - centered */
 
-/* start head in every section block - right (e.g. date in blog) */
+/* start head in every section block - right date in blog */
 h2 {
 	font-family: 'Megrim', cursive;
 	font-size: 15pt;
 	color: #20bcd5;
 	text-align: right;
-	padding: 15px 0 0 0;
+	padding: 30px 0 0 0;
 	margin: 0 0 0 0;
 }
 
@@ -57,8 +57,8 @@ h3 {
 	font-size: 28pt;
 	color: white;
 	text-align: left;
-	padding: 0 0 0 0;
-	margin: 15px 0 5px 0;
+	padding: 0px 0 15px 0;
+	margin: 0 0 0 0;
 }
 /* end topic of blog sections */
 
@@ -67,11 +67,17 @@ h3 {
 	font-family: 'Quicksand', sans-serif;
 	font-size: 20pt;
 	text-align: justify;
-	line-height: 25pt;
+	line-height: 35pt;
 	padding: 0;
 	margin: 0;
 }
 /* end font for blog content text */
+
+/* start class for links */
+.link {
+	text-decoration: underline;
+}
+/* end class for links */
 
 /* start code tags in blog */
 .codeTagJs {
@@ -84,7 +90,7 @@ h3 {
 	border-radius: 30px;
 	border-color: #f7df1e;
 	padding: 3px 10px 5px;
-	margin: 0 0 0 0;
+	margin: 0;
 }
 
 .codeTagHtml {
@@ -97,7 +103,7 @@ h3 {
 	border-radius: 30px;
 	border-color: #e34c26;
 	padding: 3px 10px 5px;
-	margin: 0 0 0 0;
+	margin: 0;
 }
 
 .codeTagCss {
@@ -110,7 +116,7 @@ h3 {
 	border-radius: 30px;
 	border-color: #2860ba;
 	padding: 3px 10px 5px;
-	margin: 0 0 0 0;
+	margin: 0;
 }
 
 .codeTagAnything {
@@ -123,7 +129,7 @@ h3 {
 	border-radius: 30px;
 	border-color: #efefef;
 	padding: 3px 10px 5px;
-	margin: 0 0 0 0;
+	margin: 0;
 }
 /* end code tags in blog */
 
@@ -131,7 +137,7 @@ h3 {
 .section {
 	background-color: black;
 	color: #efefef;
-	padding: 15px;
+	padding: 15px 35px 28px 35px;
 	margin-bottom: 20px;
 	border-radius: 10px;
 	transition: 0.5s;
@@ -259,7 +265,6 @@ h3 {
 
 /* start progress area */
 li {
-	margin-bottom: 15px;
 	font-weight: bold;
 	font-family: 'Quicksand', sans-serif;
 }

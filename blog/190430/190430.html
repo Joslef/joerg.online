@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>my blog</title>
+		<link
+			rel="shortcut icon"
+			type="image/png"
+			href="../../icons/favicon.ico"
+		/>
+		<link
+			href="../../css/styleLight.css"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<link href="../../css/styleDark.css" rel="stylesheet" type="text/css" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Cutive+Mono|Major+Mono+Display|Megrim|Reenie+Beanie|Quicksand"
+			rel="stylesheet"
+		/>
+	</head>
+
+	<body>
+		<!-- sidepanel start -->
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+				>&times;</a
+			>
+			<a href="../../index.html">Home</a>
+			<a href="../../blog.html">Blog</a>
+			<a href="../../tools.html">Tools</a>
+			<a href="../../skills.html">Skills</a>
+			<a href="mailto:joerg.stoepel@googlemail.com">Contact</a>
+		</div>
+		<!-- sidepanel end -->
+
+		<!-- Add all page content inside the div with class "main" if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+		<div id="main">
+			<!-- header start -->
+			<div id="darkmode">
+				<a href="#" onclick="changeCSS('../../css/styleDark.css', 2)">
+					🌑</a
+				>
+			</div>
+			<div id="lightmode">
+				<a href="#" onclick="changeCSS('../../css/styleLight.css', 2)">
+					☀️</a
+				>
+			</div>
+
+			<div id="header">
+				<a href="#"><div id="lines" onclick="openNav()"></div></a>
+				welcome to <span>🌴️</span> joerg.online
+			</div>
+			<!-- header end -->
+
+			<!-- blog entry section start -->
+			<div class="section">
+				<h2><span>tuesday, 04/30/19</span></h2>
+				<h3>
+					#2 Why simply start a webpage isn't always the best idea
+				</h3>
+				<!-- <span class="codeTagJs">#javascript</span> -->
+				<span class="codeTagHtml">#html</span>
+				<span class="codeTagCss">#css</span>
+				<span class="codeTagAnything">#design</span>
+				<a
+					href="https://www.figma.com/"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<span class="codeTagAnything">#figma</span></a
+				>
+				<a
+					href="https://www.sketch.com/"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<span class="codeTagAnything">#sketch</span></a
+				>
+				<a
+					href="https://www.adobe.com/products/xd.html"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<span class="codeTagAnything">#adobexd</span></a
+				>
+				<br /><br /><br /><br />
+				<p class="textBlog">
+					Of course you wanna start and you wanna work on the code,
+					you just learned! That's ok for sure, the worst you can do
+					is just to much think about. But in the retrospective of my
+					homepage there are some things considering them first will
+					save you a lot of time.
+				</p>
+				<ul>
+					<li class="textBlog">imagine your page first</li>
+				</ul>
+				<p class="textBlog">
+					What I mean by that is, that you should think about the
+					design of your page first, then build it. The design you see
+					right now is probably the fourth version of how the page
+					looked in the beginning. By the way, if you want to see the
+					evolution of this page you can check out my GitHub
+					repository right
+					<a
+						href="https://github.com/Joslef/joergOnline"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="link"
+						>here</a
+					>. There are several tools that can help you to imagine your
+					result first.
+					<a
+						href="https://www.figma.com/"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="link"
+						>Figma</a
+					>,
+					<a
+						href="https://www.sketch.com/"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="link"
+						>Sketch</a
+					>
+					or
+					<a
+						href="https://www.adobe.com/products/xd.html"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="link"
+						>Adobe XD</a
+					>
+					just to name a few. Use these tools, u can simulate the
+					behavoir of a webpage pretty well. With the right design of
+					your page, this brings me to bulletpoint number 2:
+				</p>
+				<ul>
+					<li class="textBlog">
+						which colors and fonts you want to use?
+					</li>
+				</ul>
+				<p class="textBlog">
+					With the right design of your page there is no more question
+					about fonts and colors. This is a thing I really
+					underestimated. In the process of this page I had 6
+					different fonts and colors each. Thats way to much, also you
+					got to keep in mind that a good design is as important as
+					function. Finally:
+				</p>
+				<ul>
+					<li class="textBlog">
+						use as few as possible classes and ids in your css file
+					</li>
+				</ul>
+				<p class="textBlog">
+					This is probably the most difficult part as a beginner. I
+					can imagine everyone evolves his own ideas of styling a
+					page. But to decide first, what will be a tag, what is class
+					and why not use an id? Furthermore you will do way too much
+					classes and ids in the beginning. This makes it easy right
+					from the start, but you really have to pay later! Defining
+					its own class for every possible situation will blow your
+					css file up. Of course you don't know what belongs to what
+					later. Also the first bullet point in this blog entry will
+					help you to keep your css file clean and simple. In my case
+					I got two css files for darkmode also, so believe me!
+				</p>
+				<br /><br />
+				<a href="../../blog.html"
+					><p class="textBlog link">back to Blog</p></a
+				>
+			</div>
+
+			<!-- blog entry section end -->
+
+			<div class="copyright">
+				This is a classicair production &copy; 2019
+			</div>
+		</div>
+		<script src="../../script.js"></script>
+	</body>
+</html>
