@@ -1,18 +1,32 @@
+localStorage.setItem(
+	'mode',
+	(localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark',
+);
+localStorage.getItem('mode') === 'dark'
+	? document.querySelector('body').classList.add('dark')
+	: document.querySelector('body').classList.remove('dark');
+
+document.addEventListener('DOMContentLoaded', event => {
+	(localStorage.getItem('mode') || 'dark') === 'dark'
+		? document.querySelector('body').classList.add('dark')
+		: document.querySelector('body').classList.remove('dark');
+});
+
 /* switches between the the css files styleLight.css and styleDark.css */
-function changeCSS(cssFile, cssLinkIndex) {
-	var oldlink = document.getElementsByTagName('link').item(cssLinkIndex);
+// function changeCSS(cssFile, cssLinkIndex) {
+// 	var oldlink = document.getElementsByTagName('link').item(cssLinkIndex);
 
-	var newlink = document.createElement('link');
-	newlink.setAttribute('rel', 'stylesheet');
-	newlink.setAttribute('type', 'text/css');
-	newlink.setAttribute('href', cssFile);
-	document.head.appendChild(newlink);
+// 	var newlink = document.createElement('link');
+// 	newlink.setAttribute('rel', 'stylesheet');
+// 	newlink.setAttribute('type', 'text/css');
+// 	newlink.setAttribute('href', cssFile);
+// 	document.head.appendChild(newlink);
 
-	document
-		.getElementsByTagName('head')
-		.item(0)
-		.replaceChild(newlink, oldlink);
-}
+// 	document
+// 		.getElementsByTagName('head')
+// 		.item(0)
+// 		.replaceChild(newlink, oldlink);
+// }
 
 /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
 function openNav() {

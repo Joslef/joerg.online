@@ -5,15 +5,14 @@
 		<meta name="viewport" content="width=device-width" />
 		<title>tools</title>
 		<link rel="shortcut icon" type="image/png" href="icons/favicon.ico" />
-		<link href="css/styleLight.css" rel="stylesheet" type="text/css" />
-		<link href="css/styleDark.css" rel="stylesheet" type="text/css" />
+		<link href="/style.css" rel="stylesheet" type="text/css" />
 		<link
 			href="https://fonts.googleapis.com/css?family=Cutive+Mono|Major+Mono+Display|Megrim|Reenie+Beanie|Quicksand"
 			rel="stylesheet"
 		/>
 	</head>
 
-	<body>
+	<body class="dark">
 		<!-- sidepanel start -->
 		<div id="mySidenav" class="sidenav">
 			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
@@ -30,13 +29,16 @@
 		<!-- Add all page content inside the div with class "main" if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
 		<div id="main">
 			<!-- header start -->
-			<div id="darkmode">
-				<a href="#" onclick="changeCSS('css/styleDark.css', 2)"> 🌑</a>
+			<div>
+				<a
+					href="#"
+					onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')"
+					title="Dark/light"
+					id="darkmode"
+				>
+					🌑☀️</a
+				>
 			</div>
-			<div id="lightmode">
-				<a href="#" onclick="changeCSS('css/styleLight.css', 2)"> ☀️</a>
-			</div>
-
 			<div id="header">
 				<a href="#"><div id="lines" onclick="openNav()"></div></a>
 				welcome to <span>🌴️</span> joerg.online
