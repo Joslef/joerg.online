@@ -19,6 +19,7 @@ function openNav() {
 	document.getElementById('mySidenav').style.width = '250px';
 	document.getElementById('main').style.marginLeft = '250px';
 	document.getElementById('main').style.opacity = '0.4';
+	document.addEventListener('click', function closeNav() {});
 }
 
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
@@ -27,3 +28,14 @@ function closeNav() {
 	document.getElementById('main').style.marginLeft = '0';
 	document.getElementById('main').style.opacity = '1';
 }
+
+/* click in the sidenav will close it */
+document.getElementById('mySidenav').addEventListener('click', closeNav);
+
+/* click outside the sidenav will close it */
+window.addEventListener('mousedown', function(event) {
+	let nav = document.getElementById('mySidenav');
+	if (event.target != nav) {
+		closeNav();
+	}
+});
