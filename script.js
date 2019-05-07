@@ -1,6 +1,6 @@
 localStorage.setItem(
 	'mode',
-	(localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark',
+	(localStorage.getItem('mode') || 'dark') === 'dark' ? 'dark' : 'light',
 );
 localStorage.getItem('mode') === 'dark'
 	? document.querySelector('body').classList.add('dark')
