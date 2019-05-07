@@ -167,6 +167,7 @@ body.dark .link {
 	line-height: 25pt;
 	color: white;
 	background-color: #f7df1e;
+	color: black;
 	border-radius: 30px;
 	border-color: #f7df1e;
 	padding: 3px 10px 5px;
@@ -180,6 +181,7 @@ body.dark .codeTagJs {
 	line-height: 25pt;
 	color: white;
 	background-color: #f7df1e;
+	color: black;
 	border-radius: 30px;
 	border-color: #f7df1e;
 	padding: 3px 10px 5px;
