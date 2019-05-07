@@ -6,14 +6,16 @@ html {
 body {
 	padding: 0px;
 	margin: 0;
+	background-color: #efefef;
 }
 
 body.dark {
-	padding: 0px;
+	padding: 0;
 	margin: 0;
+	background-color: #1f1f1f;
 }
 
-a {
+body a {
 	color: #818181;
 	text-decoration: none;
 }
@@ -29,8 +31,7 @@ body h1 {
 	font-size: 15pt;
 	color: #20bcd5;
 	text-align: center;
-	padding: 18px 0 18px 0;
-	margin: 0 0 10px 0;
+	margin: 30px 0 50px 0;
 }
 
 body.dark h1 {
@@ -38,8 +39,7 @@ body.dark h1 {
 	font-size: 15pt;
 	color: #20bcd5;
 	text-align: center;
-	padding: 18px 0 18px 0;
-	margin: 0 0 10px 0;
+	margin: 30px 0 50px 0;
 }
 
 h1 span {
@@ -112,7 +112,18 @@ body.dark h3 {
 	font-family: 'Quicksand', sans-serif;
 	font-size: 20pt;
 	text-align: justify;
-	line-height: 35pt;
+	line-height: 28pt;
+	padding: 0;
+	margin: 0;
+}
+
+.textBlog a {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 20pt;
+	text-align: justify;
+	line-height: 28pt;
+	text-decoration: underline;
+	color: #818181;
 	padding: 0;
 	margin: 0;
 }
@@ -121,7 +132,18 @@ body.dark .textBlog {
 	font-family: 'Quicksand', sans-serif;
 	font-size: 20pt;
 	text-align: justify;
-	line-height: 35pt;
+	line-height: 28pt;
+	padding: 0;
+	margin: 0;
+}
+
+body.dark .textBlog a {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 20pt;
+	text-align: justify;
+	line-height: 28pt;
+	text-decoration: underline;
+	color: #818181;
 	padding: 0;
 	margin: 0;
 }
@@ -247,7 +269,7 @@ body.dark .codeTagAnything {
 .section {
 	background-color: white;
 	color: #818181;
-	padding: 15px 35px 65px 35px;
+	padding: 15px 20px 65px;
 	margin-bottom: 20px;
 	border-radius: 10px;
 	transition: 0.5s;
@@ -255,8 +277,8 @@ body.dark .codeTagAnything {
 
 body.dark .section {
 	background-color: black;
-	color: #efefef;
-	padding: 15px 35px 65px 35px;
+	color: #818181;
+	padding: 15px 20px 65px;
 	margin-bottom: 20px;
 	border-radius: 10px;
 	transition: 0.5s;
@@ -265,26 +287,24 @@ body.dark .section {
 
 /* start burger menu */
 #lines {
-	position: absolute;
-	top: 25px;
-	left: 25px;
-	border-bottom: 8px double black;
-	border-top: 2px solid black;
-	content: '';
-	height: 3px;
-	width: 19px;
+	position: relative;
+	top: 0px;
+	left: 4px;
+	width: 30px;
+	height: 4px;
+	background-color: black;
+	margin: 4px 0;
 	transition: 0.5s;
 }
 
 body.dark #lines {
-	position: absolute;
-	top: 25px;
-	left: 25px;
-	border-bottom: 8px double white;
-	border-top: 2px solid white;
-	content: '';
-	height: 3px;
-	width: 19px;
+	position: relative;
+	top: 0px;
+	left: 4px;
+	width: 30px;
+	height: 4px;
+	background-color: white;
+	margin: 4px 0;
 	transition: 0.5s;
 }
 /* end burger menu */
@@ -292,8 +312,8 @@ body.dark #lines {
 /* start button top right corner for darkmode */
 #darkmode {
 	position: absolute;
-	right: 20px;
-	top: 34px;
+	right: 22px;
+	top: 20px;
 }
 /* end button top right corner for darkmode */
 
@@ -386,7 +406,7 @@ body.dark .sidenav .closebtn {
 body.dark #main {
 	transition: margin-left 0.5s;
 	padding: 8px;
-	background-color: #818181;
+	background-color: #1f1f1f;
 	transition: 0.5s;
 }
 
@@ -581,6 +601,7 @@ body.dark .contacts {
 
 /* start copyright at end of page */
 .copyright {
+	font-family: 'Quicksand', sans-serif;
 	font-size: 8pt;
 	padding-bottom: 10px;
 	color: #818181;
@@ -589,9 +610,10 @@ body.dark .contacts {
 }
 
 body.dark .copyright {
+	font-family: 'Quicksand', sans-serif;
 	font-size: 8pt;
 	padding-bottom: 10px;
-	color: black;
+	color: #818181;
 	position: relative;
 	text-align: right;
 }
