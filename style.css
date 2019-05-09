@@ -25,6 +25,16 @@ body.dark a {
 	text-decoration: none;
 }
 
+img {
+	width: 80%;
+	height: auto;
+	border-radius: 10px;
+	display: block;
+	padding: 0;
+	margin: 0 auto;
+	border-width: 0px;
+}
+
 /* start head in every section block - centered */
 body h1 {
 	font-family: 'Megrim', cursive;
@@ -107,8 +117,17 @@ body.dark h3 {
 }
 /* end topic of blog sections */
 
-/* start font for blog content text */
+/* start blog content */
 .textBlog {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 20pt;
+	text-align: justify;
+	line-height: 28pt;
+	padding: 0;
+	margin: 0;
+}
+
+body.dark .textBlog {
 	font-family: 'Quicksand', sans-serif;
 	font-size: 20pt;
 	text-align: justify;
@@ -128,15 +147,6 @@ body.dark h3 {
 	margin: 0;
 }
 
-body.dark .textBlog {
-	font-family: 'Quicksand', sans-serif;
-	font-size: 20pt;
-	text-align: justify;
-	line-height: 28pt;
-	padding: 0;
-	margin: 0;
-}
-
 body.dark .textBlog a {
 	font-family: 'Quicksand', sans-serif;
 	font-size: 20pt;
@@ -147,7 +157,23 @@ body.dark .textBlog a {
 	padding: 0;
 	margin: 0;
 }
-/* end font for blog content text */
+
+.reference {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 13pt;
+	text-align: justify;
+	padding: 2px 0 0 0;
+	margin: 0 0 0 10%;
+}
+
+body.dark .reference {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 13pt;
+	text-align: justify;
+	padding: 2px 0 0 0;
+	margin: 0 0 0 10%;
+}
+/* end blog content */
 
 /* start class for links */
 .link {
