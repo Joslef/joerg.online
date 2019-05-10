@@ -4,7 +4,7 @@ html {
 }
 
 body {
-	padding: 0px;
+	padding: 0;
 	margin: 0;
 	background-color: #efefef;
 }
@@ -20,21 +20,6 @@ body a {
 	text-decoration: none;
 }
 
-body.dark a {
-	color: #efefef;
-	text-decoration: none;
-}
-
-img {
-	width: 80%;
-	height: auto;
-	border-radius: 10px;
-	display: block;
-	padding: 0;
-	margin: 0 auto;
-	border-width: 0px;
-}
-
 /* start head in every section block - centered */
 body h1 {
 	font-family: 'Megrim', cursive;
@@ -44,28 +29,14 @@ body h1 {
 	margin: 30px 0 50px 0;
 }
 
-body.dark h1 {
-	font-family: 'Megrim', cursive;
-	font-size: 15pt;
-	color: #20bcd5;
-	text-align: center;
-	margin: 30px 0 50px 0;
-}
-
 h1 span {
-	border: 2px solid #efefef;
-	padding: 10px 20px;
-	border-radius: 30px;
-}
-
-body.dark h1 span {
 	border: 2px solid #818181;
 	padding: 10px 20px;
 	border-radius: 30px;
 }
 /* end head in every section block - centered */
 
-/* start head in every section block - right date in blog */
+/* start head in every section block - date on the right in blog */
 h2 {
 	font-family: 'Megrim', cursive;
 	font-size: 15pt;
@@ -75,29 +46,14 @@ h2 {
 	margin: 0 0 0 0;
 }
 
-body.dark h2 {
-	font-family: 'Megrim', cursive;
-	font-size: 15pt;
-	color: #20bcd5;
-	text-align: right;
-	padding: 30px 0 30px 0;
-	margin: 0 0 0 0;
-}
-
 h2 span {
-	border: 2px solid #efefef;
-	padding: 10px 20px;
-	border-radius: 30px;
-}
-
-body.dark h2 span {
 	border: 2px solid #818181;
 	padding: 10px 20px;
 	border-radius: 30px;
 }
-/* end head in every section block - right (e.g. date in blog) */
+/* end head in every section block - date on the right in blog */
 
-/* start topic of blog sections */
+/* start topic of .section sections */
 h3 {
 	font-family: 'Quicksand', sans-serif;
 	font-size: 28pt;
@@ -117,7 +73,40 @@ body.dark h3 {
 }
 /* end topic of blog sections */
 
-/* start blog content */
+/* start .section content */
+.section {
+	background-color: white;
+	color: #818181;
+	padding: 15px 20px 65px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+	transition: 0.5s;
+}
+
+body.dark .section {
+	background-color: black;
+	color: #818181;
+	padding: 15px 20px 65px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+	transition: 0.5s;
+}
+
+/* when there is an image inside of .section */
+.section #pic {
+	position: inline;
+	width: 80%;
+	height: auto;
+	border-radius: 10px;
+	padding: 0;
+	margin: 0 auto;
+}
+
+#pic {
+	text-align: center;
+}
+
+/* it's the text within a .section element */
 .textBlog {
 	font-family: 'Quicksand', sans-serif;
 	font-size: 20pt;
@@ -127,80 +116,33 @@ body.dark h3 {
 	margin: 0;
 }
 
-body.dark .textBlog {
-	font-family: 'Quicksand', sans-serif;
-	font-size: 20pt;
-	text-align: justify;
-	line-height: 28pt;
-	padding: 0;
-	margin: 0;
-}
-
+/* links within .section */
 .textBlog a {
 	font-family: 'Quicksand', sans-serif;
+	color: #818181;
 	font-size: 20pt;
 	text-align: justify;
 	line-height: 28pt;
 	text-decoration: underline;
-	color: #818181;
 	padding: 0;
 	margin: 0;
 }
 
-body.dark .textBlog a {
-	font-family: 'Quicksand', sans-serif;
-	font-size: 20pt;
-	text-align: justify;
-	line-height: 28pt;
-	text-decoration: underline;
-	color: #818181;
-	padding: 0;
-	margin: 0;
-}
-
+/* reference under a picture in .section in for example */
 .reference {
 	font-family: 'Quicksand', sans-serif;
 	font-size: 13pt;
-	text-align: justify;
-	padding: 2px 0 0 0;
-	margin: 0 0 0 10%;
+	padding: 0 0 0 0;
+	margin: 0 0 0 18%;
 }
 
-body.dark .reference {
-	font-family: 'Quicksand', sans-serif;
-	font-size: 13pt;
-	text-align: justify;
-	padding: 2px 0 0 0;
-	margin: 0 0 0 10%;
-}
-/* end blog content */
-
-/* start class for links */
+/* a link element within .section */
 .link {
 	text-decoration: underline;
 }
 
-body.dark .link {
-	text-decoration: underline;
-}
-/* end class for links */
-
-/* start code tags in blog */
+/* start code tags in .section */
 .codeTagJs {
-	font-family: 'Quicksand', sans-serif;
-	font-size: 10pt;
-	text-align: left;
-	line-height: 25pt;
-	color: white;
-	background-color: #f7df1e;
-	color: black;
-	border-radius: 30px;
-	border-color: #f7df1e;
-	padding: 3px 10px 5px;
-	margin: 0;
-}
-
-body.dark .codeTagJs {
 	font-family: 'Quicksand', sans-serif;
 	font-size: 10pt;
 	text-align: left;
@@ -227,33 +169,7 @@ body.dark .codeTagJs {
 	margin: 0;
 }
 
-body.dark .codeTagHtml {
-	font-family: 'Quicksand', sans-serif;
-	font-size: 10pt;
-	text-align: left;
-	line-height: 25pt;
-	color: white;
-	background-color: #e34c26;
-	border-radius: 30px;
-	border-color: #e34c26;
-	padding: 3px 10px 5px;
-	margin: 0;
-}
-
 .codeTagCss {
-	font-family: 'Quicksand', sans-serif;
-	font-size: 10pt;
-	text-align: left;
-	line-height: 25pt;
-	color: white;
-	background-color: #2860ba;
-	border-radius: 30px;
-	border-color: #2860ba;
-	padding: 3px 10px 5px;
-	margin: 0;
-}
-
-body.dark .codeTagCss {
 	font-family: 'Quicksand', sans-serif;
 	font-size: 10pt;
 	text-align: left;
@@ -278,40 +194,7 @@ body.dark .codeTagCss {
 	padding: 3px 10px 5px;
 	margin: 0;
 }
-
-body.dark .codeTagAnything {
-	font-family: 'Quicksand', sans-serif;
-	font-size: 10pt;
-	text-align: left;
-	line-height: 25pt;
-	color: black;
-	background-color: #efefef;
-	border-radius: 30px;
-	border-color: #efefef;
-	padding: 3px 10px 5px;
-	margin: 0;
-}
-/* end code tags in blog */
-
-/* start block element */
-.section {
-	background-color: white;
-	color: #818181;
-	padding: 15px 20px 65px;
-	margin-bottom: 20px;
-	border-radius: 10px;
-	transition: 0.5s;
-}
-
-body.dark .section {
-	background-color: black;
-	color: #818181;
-	padding: 15px 20px 65px;
-	margin-bottom: 20px;
-	border-radius: 10px;
-	transition: 0.5s;
-}
-/* end block element */
+/* end .section content */
 
 /* start burger menu */
 #lines {
@@ -346,7 +229,6 @@ body.dark #lines {
 /* end button top right corner for darkmode */
 
 /* start sidepanel */
-
 /* The side navigation menu */
 .sidenav {
 	height: 100%; /* 100% Full-height */
@@ -374,7 +256,7 @@ body.dark .sidenav {
 	transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
-/* The navigation menu links */
+/* The navigation menu left */
 .sidenav a {
 	padding: 8px 8px 8px 32px;
 	text-decoration: none;
@@ -386,36 +268,17 @@ body.dark .sidenav {
 	transition: 0.3s;
 }
 
-body.dark .sidenav a {
-	padding: 8px 8px 8px 32px;
-	text-decoration: none;
-	font-family: 'Megrim', cursive;
-	font-weight: bold;
-	font-size: 25px;
-	color: #818181;
-	display: block;
-	transition: 0.3s;
-}
-
-/* When you mouse over the navigation links, change their color */
+/* When you mouse over the navigation left, change their color */
 .sidenav a:hover {
-	color: #efefef;
+	color: black;
 }
 
 body.dark .sidenav a:hover {
-	color: #efefef;
+	color: white;
 }
 
 /* Position and style the close button (top right corner) */
 .sidenav .closebtn {
-	position: absolute;
-	top: -3px;
-	right: 20px;
-	font-size: 40px;
-	margin-left: 50px;
-}
-
-body.dark .sidenav .closebtn {
 	position: absolute;
 	top: -3px;
 	right: 20px;
@@ -447,34 +310,9 @@ body.dark #main {
 		font-size: 18px;
 	}
 }
-
-body.dark @media screen and (max-height: 450px) {
-	.sidenav {
-		padding-top: 15px;
-	}
-	.sidenav a {
-		font-size: 18px;
-	}
-}
 /* end sidepanel */
 
 /* start section on top of page */
-#img-circle {
-	border: 3px solid #818181;
-	border-radius: 50%;
-	width: 80px;
-	height: 80px;
-	margin: auto;
-}
-
-body.dark #img-circle {
-	border: 3px solid #efefef;
-	border-radius: 50%;
-	width: 80px;
-	height: 80px;
-	margin: auto;
-}
-
 #header {
 	background-image: linear-gradient(to right, #70e1f5, #ffd194);
 	color: #818181;
@@ -507,13 +345,6 @@ body.dark #header {
 	text-align: right;
 	margin-top: 10px;
 }
-
-body.dark #quote {
-	font-family: 'Quicksand', sans-serif;
-	font-size: 20pt;
-	text-align: right;
-	margin-top: 10px;
-}
 /* end section on top of page */
 
 /* start progress area */
@@ -522,16 +353,7 @@ li {
 	font-family: 'Quicksand', sans-serif;
 }
 
-body.dark li {
-	font-weight: bold;
-	font-family: 'Quicksand', sans-serif;
-}
-
 ul p {
-	font-family: 'Quicksand', sans-serif;
-}
-
-body.dark ul p {
 	font-family: 'Quicksand', sans-serif;
 }
 
@@ -560,9 +382,6 @@ body.dark progress::-webkit-progress-bar {
 progress::-webkit-progress-value {
 	background: #3fb6b2;
 }
-body.dark progress::-webkit-progress-value {
-	background: #3fb6b2;
-}
 
 progress::-moz-progress-bar {
 	color: #3fb6b2;
@@ -575,8 +394,12 @@ body.dark progress::-moz-progress-bar {
 }
 /* end progress area */
 
-/* start follow me section */
-.contacts img {
+/* start social media section */
+.section#icons {
+	text-align: center;
+}
+
+.section#icons img {
 	height: 50px;
 	width: 50px;
 	margin-left: 7px;
@@ -588,19 +411,7 @@ body.dark progress::-moz-progress-bar {
 	/* end transition */
 }
 
-body.dark .contacts img {
-	height: 50px;
-	width: 50px;
-	margin-left: 7px;
-	margin-right: 7px;
-	/* start transition */
-	position: relative;
-	top: 0;
-	transition: top ease 0.2s;
-	/* end transition */
-}
-
-.contacts img:hover {
+#icons img:hover {
 	/* start transition */
 	top: -2px;
 	/* end transition */
@@ -609,7 +420,7 @@ body.dark .contacts img {
 	/* end box shadow */
 }
 
-body.dark .contacts img:hover {
+body.dark #icons img:hover {
 	/* start transition */
 	top: -2px;
 	/* end transition */
@@ -617,27 +428,10 @@ body.dark .contacts img:hover {
 	box-shadow: 3px 3px 5px 0px rgba(255, 255, 255);
 	/* end box shadow */
 }
-
-.contacts {
-	text-align: center;
-}
-
-body.dark .contacts {
-	text-align: center;
-}
-/* end follow me section */
+/* end social media section */
 
 /* start copyright at end of page */
 .copyright {
-	font-family: 'Quicksand', sans-serif;
-	font-size: 8pt;
-	padding-bottom: 10px;
-	color: #818181;
-	position: relative;
-	text-align: right;
-}
-
-body.dark .copyright {
 	font-family: 'Quicksand', sans-serif;
 	font-size: 8pt;
 	padding-bottom: 10px;
