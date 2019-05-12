@@ -97,8 +97,7 @@ body.dark .section {
 	width: 80%;
 	height: auto;
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto;
 	border-radius: 10px;
 }
 /* 
@@ -129,7 +128,8 @@ body.dark .section {
 .reference {
 	font-family: 'Quicksand', sans-serif;
 	font-size: 13pt;
-	margin-left: 130px;
+	margin-left: 10%;
+	margin-top: 5px;
 }
 
 /* a link element within .section */
