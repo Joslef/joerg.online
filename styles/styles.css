@@ -1,0 +1,15 @@
+span .fab.fa-github:hover {
+	color: #211f1f;
+}
+span .fab.fa-twitter:hover {
+	color: #00acee;
+}
+span .fab.fa-linkedin-in:hover {
+	color: #0e76a8;
+}
+span .fab.fa-facebook-f:hover {
+	color: #3b5998;
+}
+span .fas.fa-inbox:hover {
+	color: #d44638;
+}

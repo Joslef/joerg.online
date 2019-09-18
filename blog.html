@@ -1,115 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<!-- Required meta tags -->
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<title>let's learn javascript, html and css together</title>
 		<meta
-			name="description"
-			content="diary and interesting facts about how to learn to code"
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
 		/>
-		<meta property="og:url" content="https://www.joerg.online" />
-		<meta property="og:type" content="article" />
-		<meta property="og:title" content="welcome to joerg.online" />
-		<meta
-			property="og:description"
-			content="follow me on my journey on becoming a self-taught web developer"
-		/>
-		<meta property="og:image" content="pictures/header.jpg" />
-		<link rel="shortcut icon" type="image/png" href="icons/favicon.ico" />
-		<link href="/style.css" rel="stylesheet" type="text/css" />
-		<link
-			href="https://fonts.googleapis.com/css?family=Megrim|Quicksand"
-			rel="stylesheet"
-		/>
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="/joergOnline/styles/bootstrap.min.css" />
+		<link rel="stylesheet" href="/joergOnline/styles/styles.css" />
+		<title>joerg.online</title>
 	</head>
-
-	<body class="dark">
-		<!-- sidepanel start -->
-		<div id="mySidenav" class="sidenav">
-			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-				>&times;</a
+	<body>
+		<!-- navbar: https://getbootstrap.com/docs/4.3/components/navbar/ -->
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="/joergOnline/index.html"
+				><i class="fas fa-code"></i
+			></a>
+			<button
+				class="navbar-toggler"
+				type="button"
+				data-toggle="collapse"
+				data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
 			>
-			<a href="index.html">Home</a>
-			<a href="blog.html">Blog</a>
-			<a href="tools.html">Tools</a>
-			<a href="skills.html">Skills</a>
-			<a href="mailto:joerg.stoepel@googlemail.com">Contact</a>
-		</div>
-		<!-- sidepanel end -->
+				<span class="navbar-toggler-icon"></span>
+			</button>
 
-		<!-- Add all page content inside the div with class "main" if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
-		<div id="main">
-			<!-- header start -->
-			<div>
-				<a
-					href="#"
-					onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')"
-					title="Dark/light"
-					id="darkmode"
-				>
-					🌑☀️</a
-				>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#"
+							>blog<span class="sr-only">(current)</span></a
+						>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">tools</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">skills</a>
+					</li>
+				</ul>
 			</div>
-			<div id="header">
-				<a href="#"
-					><div onclick="openNav()">
-						<div id="lines"></div>
-						<div id="lines"></div>
-						<div id="lines"></div></div
-				></a>
-				welcome to <span>🌴️</span> joerg.online
-			</div>
-			<!-- header end -->
-
-			<!-- blog entry section start -->
-			<a href="blog/190502/190502.html">
-				<div class="section">
-					<h2><span>thursday, 05/02/19</span></h2>
-					<h3>
-						#3 What's your path on becoming a web-developer?
-					</h3>
-					<span class="codeTagJs">#javascript</span>
-					<span class="codeTagHtml">#html</span>
-					<span class="codeTagCss">#css</span>
-					<span class="codeTagAnything">#framework</span>
-					<span class="codeTagAnything">#codeburst</span>
-					<span class="codeTagAnything">#roadmap</span>
-				</div></a
-			>
-
-			<a href="blog/190430/190430.html"
-				><div class="section">
-					<h2><span>tuesday, 04/30/19</span></h2>
-					<h3>
-						#2 Why simply start a webpage isn't always the best idea
-					</h3>
-					<span class="codeTagHtml">#html</span>
-					<span class="codeTagCss">#css</span>
-					<span class="codeTagAnything">#design</span>
-					<span class="codeTagAnything">#figma</span>
-					<span class="codeTagAnything">#sketch</span>
-					<span class="codeTagAnything">#adobexd</span>
-				</div></a
-			>
-
-			<a href="blog/190429/190429.html">
-				<div class="section">
-					<h2><span>monday, 04/29/19</span></h2>
-					<h3>
-						#1 How I got into the idea of learning to code
-					</h3>
-					<span class="codeTagJs">#javascript</span>
-					<span class="codeTagAnything">#medium</span>
-					<span class="codeTagAnything">#freecodecamp</span>
+		</nav>
+		<div class="container my-3">
+			<div class="card">
+				<div class="card-header text-right text-muted">
+					thursday, 05/02/19
 				</div>
-			</a>
-			<!-- blog entry section end -->
+				<div class="card-body">
+					<h5 class="h2 card-title mb-3">
+						#3 What's your path on becoming a web-developer?
+					</h5>
+					<span class="rounded-pill text-light bg-secondary px-2"
+						>#javascript</span
+					>
+					<span class="rounded-pill text-light bg-secondary px-2"
+						>#html</span
+					>
+					<span class="rounded-pill text-light bg-secondary px-2"
+						>#css</span
+					>
 
-			<div class="copyright">
-				This is a classicair production &copy; 2019
+					<p class="card-text mb-3 mt-4">
+						As I mentioned on my homepage before...
+					</p>
+					<a href="#" class="btn btn-outline-info">read</a>
+				</div>
 			</div>
 		</div>
-		<script src="script.js"></script>
+		<div class="container my-3">
+			<div class="card">
+				<div class="card-header text-right text-muted">
+					tuesday, 04/30/19
+				</div>
+				<div class="card-body">
+					<h5 class="h2 card-title mb-3">
+						#2 Why simply start a webpage isn't always the best idea
+					</h5>
+					<span class="rounded-pill text-light bg-secondary px-2"
+						>#html</span
+					>
+					<span class="rounded-pill text-light bg-secondary px-2"
+						>#css</span
+					>
+					<span class="rounded-pill text-light bg-secondary px-2"
+						>#design</span
+					>
+					<p class="card-text mb-3 mt-4">
+						Of course you wanna start and you wanna work on the
+						code...
+					</p>
+					<a href="#" class="btn btn-outline-info">read</a>
+				</div>
+			</div>
+		</div>
+		<div class="container my-3">
+			<div class="card">
+				<div class="card-header text-right text-muted">
+					monday, 04/29/19
+				</div>
+				<div class="card-body">
+					<h5 class="h2 card-title mb-3">
+						#1 How I got into the idea of learning to code
+					</h5>
+					<span class="rounded-pill text-light bg-secondary px-2"
+						>#javascript</span
+					>
+					<span class="rounded-pill text-light bg-secondary px-2"
+						>#medium</span
+					>
+					<span class="rounded-pill text-light bg-secondary px-2"
+						>#freecodecamp</span
+					>
+
+					<p class="card-text mb-3 mt-4">
+						It must have been a day in october 2018...
+					</p>
+					<a href="#" class="btn btn-outline-info">read</a>
+				</div>
+			</div>
+		</div>
+		<footer class="py-2 bg-secondary text-white-50">
+			<div class="container text-center">
+				<div class="row">
+					<div class="col">
+						<span>
+							<a
+								href="https://github.com/Joslef"
+								style="color:#e9ecef"
+								><i class="fab fa-github"></i
+							></a>
+						</span>
+					</div>
+					<div class="col">
+						<span>
+							<a
+								href="https://twitter.com/Joslef"
+								style="color:#e9ecef"
+							>
+								<i class="fab fa-twitter"></i>
+							</a>
+						</span>
+					</div>
+					<div class="col">
+						<span>
+							<a
+								href="https://www.linkedin.com/in/joergstoepel/"
+								style="color:#e9ecef"
+							>
+								<i class="fab fa-linkedin-in"></i>
+							</a>
+						</span>
+					</div>
+					<div class="col">
+						<span>
+							<a
+								href="https://www.facebook.com/joslef.baboneman"
+								style="color:#e9ecef"
+							>
+								<i class="fab fa-facebook-f"></i>
+							</a>
+						</span>
+					</div>
+					<div class="col">
+						<span>
+							<a
+								href="mailto:joerg.stoepel@googlemail.com"
+								style="color:#e9ecef"
+							>
+								<i class="fas fa-inbox"></i>
+							</a>
+						</span>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="/joergOnline/javascript/jquery-3.4.1.min.js"></script>
+		<script src="/joergOnline/javascript/popper.min.js"></script>
+		<script src="/joergOnline/javascript/bootstrap.bundle.min.js"></script>
+		<script src="https://kit.fontawesome.com/54609de218.js"></script>
 	</body>
 </html>
