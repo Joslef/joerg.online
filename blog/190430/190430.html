@@ -1,186 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<!-- Required meta tags -->
-		<meta charset="utf-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1, shrink-to-fit=no"
-		/>
-		<!-- Bootstrap CSS -->
-		<link
-			rel="stylesheet"
-			href="/../joergOnline/styles/bootstrap.min.css"
-		/>
-		<link rel="stylesheet" href="/../joergOnline/styles/styles.css" />
-		<title>joerg.online</title>
-	</head>
-	<body>
-		<!-- navbar: https://getbootstrap.com/docs/4.3/components/navbar/ -->
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<a class="navbar-brand" href="/joergOnline/index.html"
-				><i class="fas fa-code"></i
-			></a>
-			<button
-				class="navbar-toggler"
-				type="button"
-				data-toggle="collapse"
-				data-target="#navbarSupportedContent"
-				aria-controls="navbarSupportedContent"
-				aria-expanded="false"
-				aria-label="Toggle navigation"
-			>
-				<span class="navbar-toggler-icon"></span>
-			</button>
 
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item active">
-						<a class="nav-link" href="/joergOnline/blog.html"
-							>blog<span class="sr-only">(current)</span></a
-						>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="/joergOnline/tools.html"
-							>tools</a
-						>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="/joergOnline/skills.html"
-							>skills</a
-						>
-					</li>
-				</ul>
-				<div class="form-inline my-2 my-lg-0">
-					<a class="nav-link pl-0" href="https://github.com/Joslef"
-						><span class="text-muted"
-							><i class="fab fa-github"></i> </span
-					></a>
-					<a class="nav-link" href="https://twitter.com/Joslef"
-						><span class="text-light">
-							<i class="fab fa-twitter"></i> </span
-					></a>
-					<a
-						class="nav-link"
-						href="https://www.linkedin.com/in/joergstoepel/"
-						><span class="text-secondary">
-							<i class="fab fa-linkedin-in"></i> </span
-					></a>
-					<a
-						class="nav-link"
-						href="https://www.facebook.com/joslef.baboneman"
-						><span class="text-secondary">
-							<i class="fab fa-facebook-f"></i> </span
-					></a>
-					<a
-						class="nav-link"
-						href="mailto:joerg.stoepel@googlemail.com"
-						><span class="text-secondary">
-							<i class="fas fa-inbox"></i> </span
-					></a>
-				</div>
-			</div>
-		</nav>
-		<div class="container mt-3">
-			<div class="card">
-				<div class="card-header text-right text-muted">
-					tuesday, 04/30/19
-				</div>
-				<div class="card-body">
-					<img
-						src="/../joergOnline/blog/190430/design.jpg"
-						class="card-img-top"
-						alt="design.jpg"
-					/>
-					<a href="https://unsplash.com/photos/gcsNOsPEXfs"
-						><p class="text-right">source: unsplash.com</p></a
-					>
-					<h5 class="h2 card-title my-3">
-						#2 Why simply start a webpage isn't always the best idea
-					</h5>
-					<span class="rounded-pill text-light bg-secondary px-2 py-1"
-						>#html</span
-					>
-					<span class="rounded-pill text-light bg-secondary px-2 py-1"
-						>#css</span
-					>
-					<span class="rounded-pill text-light bg-secondary px-2 py-1"
-						>#design</span
-					>
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="/styles/bootstrap.min.css" />
+	<link rel="stylesheet" href="/styles/styles.css" />
+	<title>joerg.online</title>
+</head>
 
-					<p class="card-text mb-3 mt-4 text-justify">
-						Of course you wanna start and you wanna work on the
-						code, you just learned! That's ok for sure, the worst
-						you can do is just to much think about. But in the
-						retrospective of my homepage there are some things
-						considering them first will save you a lot of time.
-					</p>
-					<ul>
-						<li><strong>imagine your page first!</strong></li>
-					</ul>
-					<p class="card-text mb-3 mt-4 text-justify">
-						What I mean by that is, that you should think about the
-						design of your page first, then build it. The design you
-						see right now is probably the fourth version of how the
-						page looked in the beginning. By the way, if you want to
-						see the evolution of this page, you can check out my
-						GitHub repository right
-						<a href="https://github.com/Joslef/joergOnline">here</a
-						>. There are several tools that can help you to imagine
-						your result first. Figma, Sketch or Adobe XD just to
-						name a few. Use these tools, you can simulate the
-						behavoir of a webpage pretty well. With the right design
-						of your page, this brings me to bulletpoint number 2:
-					</p>
-					<ul>
-						<li>
-							<strong>
-								which colors and fonts you want to use?</strong
-							>
-						</li>
-					</ul>
-					<p class="card-text mb-3 mt-4 text-justify">
-						With the right design of your page there is no more
-						question about fonts and colors. This is a thing I
-						really underestimated. In the process of this page I had
-						6 different fonts and colors each. Thats way to much,
-						also you got to keep in mind that a good design is as
-						important as function. Finally:
-					</p>
-					<ul>
-						<li>
-							<strong>
-								use as few as possible classes and ids in your
-								css file!
-							</strong>
-						</li>
-					</ul>
-					<p class="card-text mb-3 mt-4 text-justify">
-						This is probably the most difficult part as a beginner.
-						I can imagine everyone evolves his own ideas of styling
-						a page. But to decide first, what will be a tag, what is
-						class and why not use an id? Furthermore you will do way
-						too much classes and ids in the beginning. This makes it
-						easy right from the start, but you really have to pay
-						later! Defining its own class for every possible
-						situation will blow your css file up. Of course you
-						don't know what belongs to what later. Also the first
-						bullet point in this blog entry will help you to keep
-						your css file clean and simple.
-					</p>
-					<a
-						href="/../joergOnline/blog.html"
-						class="btn btn-outline-secondary"
-						>back</a
-					>
-				</div>
+<body>
+	<!-- navbar: https://getbootstrap.com/docs/4.3/components/navbar/ -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="/index.html"><i class="fas fa-code"></i></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="/blog.html">blog<span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/tools.html">tools</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/skills.html">skills</a>
+				</li>
+			</ul>
+			<div class="form-inline my-2 my-lg-0">
+				<a class="nav-link pl-0" href="https://github.com/Joslef"><span class="text-muted"><i
+							class="fab fa-github"></i> </span></a>
+				<a class="nav-link" href="https://twitter.com/Joslef"><span class="text-light">
+						<i class="fab fa-twitter"></i> </span></a>
+				<a class="nav-link" href="https://www.linkedin.com/in/joergstoepel/"><span class="text-secondary">
+						<i class="fab fa-linkedin-in"></i> </span></a>
+				<a class="nav-link" href="https://www.facebook.com/joslef.baboneman"><span class="text-secondary">
+						<i class="fab fa-facebook-f"></i> </span></a>
+				<a class="nav-link" href="mailto:joerg.stoepel@googlemail.com"><span class="text-secondary">
+						<i class="fas fa-inbox"></i> </span></a>
 			</div>
 		</div>
-		<!-- Optional JavaScript -->
-		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-		<script src="/../joergOnline/javascript/jquery-3.4.1.min.js"></script>
-		<script src="/../joergOnline/javascript/popper.min.js"></script>
-		<script src="/../joergOnline/javascript/bootstrap.bundle.min.js"></script>
-		<script src="https://kit.fontawesome.com/54609de218.js"></script>
-	</body>
+	</nav>
+	<div class="container mt-3">
+		<div class="card">
+			<div class="card-header text-right text-muted">
+				tuesday, 04/30/19
+			</div>
+			<div class="card-body">
+				<img src="/blog/190430/design.jpg" class="card-img-top" alt="design.jpg" />
+				<a href="https://unsplash.com/photos/gcsNOsPEXfs">
+					<p class="text-right">source: unsplash.com</p>
+				</a>
+				<h5 class="h2 card-title my-3">
+					#2 Why simply start a webpage isn't always the best idea
+				</h5>
+				<span class="rounded-pill text-light bg-secondary px-2 py-1">#html</span>
+				<span class="rounded-pill text-light bg-secondary px-2 py-1">#css</span>
+				<span class="rounded-pill text-light bg-secondary px-2 py-1">#design</span>
+
+				<p class="card-text mb-3 mt-4 text-justify">
+					Of course you wanna start and you wanna work on the
+					code, you just learned! That's ok for sure, the worst
+					you can do is just to much think about. But in the
+					retrospective of my homepage there are some things
+					considering them first will save you a lot of time.
+				</p>
+				<ul>
+					<li><strong>imagine your page first!</strong></li>
+				</ul>
+				<p class="card-text mb-3 mt-4 text-justify">
+					What I mean by that is, that you should think about the
+					design of your page first, then build it. The design you
+					see right now is probably the fourth version of how the
+					page looked in the beginning. By the way, if you want to
+					see the evolution of this page, you can check out my
+					GitHub repository right
+					<a href="https://github.com/Joslef/joergOnline">here</a>. There are several tools that can help you
+					to imagine
+					your result first. Figma, Sketch or Adobe XD just to
+					name a few. Use these tools, you can simulate the
+					behavoir of a webpage pretty well. With the right design
+					of your page, this brings me to bulletpoint number 2:
+				</p>
+				<ul>
+					<li>
+						<strong>
+							which colors and fonts you want to use?</strong>
+					</li>
+				</ul>
+				<p class="card-text mb-3 mt-4 text-justify">
+					With the right design of your page there is no more
+					question about fonts and colors. This is a thing I
+					really underestimated. In the process of this page I had
+					6 different fonts and colors each. Thats way to much,
+					also you got to keep in mind that a good design is as
+					important as function. Finally:
+				</p>
+				<ul>
+					<li>
+						<strong>
+							use as few as possible classes and ids in your
+							css file!
+						</strong>
+					</li>
+				</ul>
+				<p class="card-text mb-3 mt-4 text-justify">
+					This is probably the most difficult part as a beginner.
+					I can imagine everyone evolves his own ideas of styling
+					a page. But to decide first, what will be a tag, what is
+					class and why not use an id? Furthermore you will do way
+					too much classes and ids in the beginning. This makes it
+					easy right from the start, but you really have to pay
+					later! Defining its own class for every possible
+					situation will blow your css file up. Of course you
+					don't know what belongs to what later. Also the first
+					bullet point in this blog entry will help you to keep
+					your css file clean and simple.
+				</p>
+				<a href="/blog.html" class="btn btn-outline-secondary">back</a>
+			</div>
+		</div>
+	</div>
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="/javascript/jquery-3.4.1.min.js"></script>
+	<script src="/javascript/popper.min.js"></script>
+	<script src="/javascript/bootstrap.bundle.min.js"></script>
+	<script src="https://kit.fontawesome.com/54609de218.js"></script>
+</body>
+
 </html>
