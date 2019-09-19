@@ -1,327 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<!-- Required meta tags -->
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<title>#3 What's your path on becoming a web-developer?</title>
 		<meta
-			name="description"
-			content="two intersting articles about where to start to code"
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
 		/>
-		<meta
-			property="og:url"
-			content="https://joerg.online/blog/190502/190502.html"
-		/>
-		<meta property="og:type" content="article" />
-		<meta
-			property="og:title"
-			content="#3 What's your path on becoming a web-developer?"
-		/>
-		<meta
-			property="og:description"
-			content="two intersting articles about where to start to code"
-		/>
-		<meta property="og:image" content="pictures/header.jpg" />
-		<link rel="shortcut icon" type="image/png" href="icons/favicon.ico" />
-		<link href="/style.css" rel="stylesheet" type="text/css" />
+		<!-- Bootstrap CSS -->
 		<link
-			href="https://fonts.googleapis.com/css?family=Megrim|Quicksand"
 			rel="stylesheet"
+			href="/../joergOnline/styles/bootstrap.min.css"
 		/>
+		<link rel="stylesheet" href="/../joergOnline/styles/styles.css" />
+		<title>joerg.online</title>
 	</head>
-
-	<body class="dark">
-		<!-- sidepanel start -->
-		<div id="mySidenav" class="sidenav">
-			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-				>&times;</a
+	<body>
+		<!-- navbar: https://getbootstrap.com/docs/4.3/components/navbar/ -->
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="/joergOnline/index.html"
+				><i class="fas fa-code"></i
+			></a>
+			<button
+				class="navbar-toggler"
+				type="button"
+				data-toggle="collapse"
+				data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
 			>
-			<a href="../../index.html">Home</a>
-			<a href="../../blog.html">Blog</a>
-			<a href="../../tools.html">Tools</a>
-			<a href="../../skills.html">Skills</a>
-			<a href="mailto:joerg.stoepel@googlemail.com">Contact</a>
-		</div>
-		<!-- sidepanel end -->
+				<span class="navbar-toggler-icon"></span>
+			</button>
 
-		<!-- Add all page content inside the div with class "main" if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
-		<div id="main">
-			<!-- header start -->
-			<div>
-				<a
-					href="#"
-					onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')"
-					title="Dark/light"
-					id="darkmode"
-				>
-					🌑☀️</a
-				>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#"
+							>blog<span class="sr-only">(current)</span></a
+						>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/joergOnline/tools.html"
+							>tools</a
+						>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/joergOnline/skills.html"
+							>skills</a
+						>
+					</li>
+				</ul>
+				<div class="form-inline my-2 my-lg-0">
+					<a class="nav-link pl-0" href="https://github.com/Joslef"
+						><span class="text-muted"
+							><i class="fab fa-github"></i> </span
+					></a>
+					<a class="nav-link" href="https://twitter.com/Joslef"
+						><span class="text-light">
+							<i class="fab fa-twitter"></i> </span
+					></a>
+					<a
+						class="nav-link"
+						href="https://www.linkedin.com/in/joergstoepel/"
+						><span class="text-secondary">
+							<i class="fab fa-linkedin-in"></i> </span
+					></a>
+					<a
+						class="nav-link"
+						href="https://www.facebook.com/joslef.baboneman"
+						><span class="text-secondary">
+							<i class="fab fa-facebook-f"></i> </span
+					></a>
+					<a
+						class="nav-link"
+						href="mailto:joerg.stoepel@googlemail.com"
+						><span class="text-secondary">
+							<i class="fas fa-inbox"></i> </span
+					></a>
+				</div>
 			</div>
-			<div id="header">
-				<a href="#"
-					><div onclick="openNav()">
-						<div id="lines"></div>
-						<div id="lines"></div>
-						<div id="lines"></div></div
-				></a>
-				welcome to <span>🌴️</span> joerg.online
-			</div>
-			<!-- header end -->
-
-			<!-- blog entry section start -->
-			<div class="section">
-				<h2><span>thursday, 04/30/19</span></h2>
-				<h3>
-					#3 What's your path on becoming a web-developer?
-				</h3>
-				<span class="codeTagJs">#javascript</span>
-				<span class="codeTagHtml">#html</span>
-				<span class="codeTagCss">#css</span>
-				<span class="codeTagAnything">#framework</span>
-				<a
-					href="https://codeburst.io/"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					<span class="codeTagAnything">#codeburst</span></a
-				>
-				<a
-					href="https://codeburst.io/the-ultimate-2019-web-developer-roadmap-7d024cbe973a"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					<span class="codeTagAnything">#roadmap</span></a
-				>
-				<br /><br /><br /><br />
-				<p class="textBlog">
-					As I mentioned on my homepage (by the way, a lot of people
-					always mix the two terms 'homepage' and 'webpage') before,
-					it is really not easy to start to code. Why is this so? I
-					would say there are two main reasons that reinforce this
-					fact.
-				</p>
-				<br /><br /><br />
-				<p class="textBlog">
-					<strong>#1: education is way behind industry</strong>
-				</p>
-				<br /><br />
-				<p class="textBlog">
-					I remember the first contact with computers at my school.
-					The equipment was already oldschool back in the 90ies! But
-					this was just hardware. You can 'update' your equipment by
-					spending money (ok, that's easier said than done in the
-					public sector!). But the real problem is knowledge. You have
-					to keep up with the industry regarding standards and
-					technology. This fact getting worse because as a teacher you
-					have to be on top to tell the people what to learn. That's
-					no easy job in the educational sector. In the private sector
-					you got your boss, who tells you to implement the new
-					technology by end of the week 👨‍💼☝️. But I really don't want
-					to badmouth the educational sector, quite the opposite!
-					...much love to the
-					<a
-						href="https://www.uni-regensburg.de/"
-						target="_blank"
-						rel="noopener noreferrer"
-						class="link"
-						>University of Regensburg</a
-					>
-					by the way ❤️! I really enjoyed the time at the university
-					and of course this educational system is absolut necessary
-					for the future of a coutry and its people...This brings me
-					to thesis
-				</p>
-				<br /><br /><br />
-				<p class="textBlog">
-					<strong>#2: this industry is HUUUUUUGE 👱‍</strong>
-				</p>
-				<br /><br />
-				<p class="textBlog">
-					You don't need bad hair to understand this. Starting with
-					the language itself, the different libraries, frameworks,
-					tools,...The 'problem' is that this industry is HUUU...ok
-					enough... by itself, it also has a very rapid devolpment
-					rate, espacially all things related javascript, in my
-					opinion. No proof, but a note towards the rigth direction:
-					just check the
-					<a
-						href="https://octoverse.github.com/projects.html"
-						target="_blank"
-						rel="noopener noreferrer"
-						class="link"
-						>github octoverse</a
-					>, js is way ahead (...as is 👍)! A lot of repos on github
-					is no proof, right, but it may be a good correlation between
-					'activity' and development in one language. Thank god the
-					internet has a lot of information about this also! One
-					article I already mentioned in my blog, but I have to
-					mention it again, because it can help you a lot is
-					<a
-						href="https://medium.freecodecamp.org/what-programming-language-should-i-learn-first-%CA%87d%C4%B1%C9%B9%C9%94s%C9%90%CA%8C%C9%90%C9%BE-%C9%B9%C7%9D%CA%8Dsu%C9%90-19a33b0a467d"
-						target="_blank"
-						rel="noopener noreferrer"
-						class="link"
-						>this one</a
-					>
-					from Quincy Larson.
-				</p>
-				<p class="textBlog">
-					But before I started my first lessons on
-					<a
-						href="https://www.freecodecamp.org/"
-						target="_blank"
-						rel="noopener noreferrer"
-						class="link"
-						>freecodecamp.org</a
-					>
-					There is one infographic that I really enjoyed! This picture
-					from
-					<a
-						href="http://www.carlcheo.com/"
-						target="_blank"
-						rel="noopener noreferrer"
-						class="link"
-						>carlcheo.com</a
-					>
-					gives you a first (and also funny) overview to the different
-					programming languages and the analogy to Lord of the Rings:
-				</p>
-				<br /><br /><br />
-				<a
-					href="http://carlcheo.com/wp-content/uploads/2014/12/which-programming-language-should-i-learn-first-infographic.png"
-					target="_blank"
-					rel="noopener noreferrer"
-					class="link"
-				>
+		</nav>
+		<div class="container mt-3">
+			<div class="card">
+				<div class="card-header text-right text-muted">
+					thursday, 05/02/19
+				</div>
+				<div class="card-body">
 					<img
-						src="http://carlcheo.com/wp-content/uploads/2014/12/which-programming-language-should-i-learn-first-infographic.png"
-						alt="which programming language"
-						class="pic"
+						src="/../joergOnline/blog/190502/start.jpg"
+						class="card-img-top"
+						alt="start.jpg"
 					/>
-				</a>
-				<p class="reference">
-					source: carlcheo.com
-				</p>
-				<br /><br /><br />
-
-				<p class="textBlog">
-					This can be the start for every new coder! Find your way
-					through and you got your language! Maybe it's not that
-					simple. I was a little surprised how few lines ended up in
-					javascript! But at least it's the powerful underestimated
-					(we are still in LotR...). <br />
-					Another good overview is from
-					<a
-						href="https://codeburst.io/@sandeepsinghmehta"
-						target="_blank"
-						rel="noopener noreferrer"
-						class="link"
-						>Sandeep Mehta</a
+					<a href="https://unsplash.com/photos/DChgWclU_xU"
+						><p class="text-right">source: unsplash.com</p></a
 					>
-					who gives you an update of the
+					<h5 class="h2 card-title my-3">
+						#3 What's your path on becoming a web-developer?
+					</h5>
+					<span class="rounded-pill text-light bg-secondary px-2 py-1"
+						>#javascript</span
+					>
+					<span class="rounded-pill text-light bg-secondary px-2 py-1"
+						>#html</span
+					>
+					<span class="rounded-pill text-light bg-secondary px-2 py-1"
+						>#css</span
+					>
+					<span class="rounded-pill text-light bg-secondary px-2 py-1"
+						>#roadmap</span
+					>
+
+					<p class="card-text mb-3 mt-4 text-justify">
+						As I mentioned on my homepage before, it is really not
+						easy to start to code. Why is this so? I would say there
+						are two main reasons that reinforce this fact.
+					</p>
+					<ol>
+						<strong
+							><li>
+								education is way behind industry
+							</li></strong
+						>
+					</ol>
+					<p class="card-text mb-3 mt-4 text-justify">
+						I remember the first contact with computers at my
+						school. The equipment was already oldschool back in the
+						90ies! But this was just hardware. You can 'update' your
+						equipment by spending money (ok, that's easier said than
+						done in the public sector!). But the real problem is
+						knowledge. You have to keep up with the industry
+						regarding standards and technology. This fact getting
+						worse because as a teacher you have to be on top to tell
+						the people what to learn. That's no easy job in the
+						educational sector. In the private sector you got your
+						boss, who tells you to implement the new technology by
+						end of the week 👨‍💼☝️. But I really don't want to
+						badmouth the educational sector, quite the opposite!
+						Much love to the University of Regensburg by the way ❤️!
+						I really enjoyed the time at the university and of
+						course this educational system is absolut necessary for
+						the future of a coutry and its people...This brings me
+						to thesis
+					</p>
+					<ol start="2">
+						<strong
+							><li>
+								this industry is HUUUUUUGE 👱‍
+							</li></strong
+						>
+					</ol>
+					<p class="card-text mb-3 mt-4 text-justify">
+						You don't need bad hair to understand this. Starting
+						with the language itself, the different libraries,
+						frameworks, tools,...The 'problem' is that this industry
+						is HUUU...ok enough... by itself, it also has a very
+						rapid devolpment rate, espacially all things related
+						javascript, in my opinion. No proof, but a note towards
+						the rigth direction: just check the
+						<a href="https://octoverse.github.com/projects.html"
+							>github octoverse</a
+						>, js is way ahead (...as is 👍)! A lot of repos on
+						github is no proof, right, but it may be a good
+						correlation between 'activity' and development in one
+						language. Thank god the internet has a lot of
+						information about this also! But before I started my
+						first lessons on
+						<a href="https://www.freecodecamp.org/">freecodecamp</a>
+						There is one infographic that I really enjoyed! This
+						picture from carlcheo.com gives you a first (and also
+						funny) overview to the different programming languages
+						and the analogy to Lord of the Rings:
+					</p>
+					<img
+						src="/../joergOnline/blog/190502/programming-language.png"
+						class="img-fluid rounded"
+						alt="programming-language"
+					/>
+					<a
+						href="http://carlcheo.com/wp-content/uploads/2014/12/which-programming-language-should-i-learn-first-infographic.png"
+						><p class="text-right">source: carlcheo.com</p></a
+					>
+					<p class="card-text mb-3 mt-4 text-justify">
+						This can be the start for every new coder! Find your way
+						through and you got your language! Maybe it's not that
+						simple. I was a little surprised how few lines ended up
+						in javascript! But at least it's the powerful
+						underestimated (we are still in LotR...). Another good
+						overview is from Sandeep Mehta who gives you an update
+						of the
+						<a
+							href="https://codeburst.io/the-ultimate-2019-web-developer-roadmap-7d024cbe973a"
+							>The Ultimate 2019 Web Developer Roadmap</a
+						>. He splits his roadmap into two parts. First ones are
+						the common coding skills, second one is the frontend
+						section of web development. For the first part of course
+						you need the three absolute basics javascript, html and
+						css. Sandeep calls html and css as the 'lifeblood of web
+						development'. Later on, for the second part of frontend
+						web development, you got several choices which path you
+						want to follow and also some recommended/must-have
+						tools. This infographic gives you quite a good overview:
+					</p>
+					<img
+						src="/../joergOnline/blog/190502/roadmap.png"
+						class="img-fluid rounded mx-auto d-block"
+						alt="roadmap"
+					/>
 					<a
 						href="https://codeburst.io/the-ultimate-2019-web-developer-roadmap-7d024cbe973a"
-						target="_blank"
-						rel="noopener noreferrer"
-						class="link"
+						><p class="text-right">source: codeburst.io</p></a
 					>
-						The Ultimate 2019 Web Developer Roadmap</a
-					>. He splits his roadmap into two parts. First ones are the
-					common coding skills, second one is the frontend section of
-					web development. For the first part of course you need the
-					three absolute basics javascript, html and css. Sandeep
-					calls html and css as the 'lifeblood of web development'.
-					Later on, for the second part of frontend web development,
-					you got several choices which path you want to follow and
-					also some recommended/must-have tools. This infographic
-					gives you quite a good overview: <br /><br /><br />
+					<p class="card-text mb-3 mt-4 text-justify">
+						As you can see the blue path are the basics. Later, you
+						can choose between several orange branches. As he points
+						out, main decision will later be which framework to
+						choose. The three most known are React.js Angular and
+						Vue.js. I will do another blog post about which
+						framework to choose later. Interesting in Sandeep's
+						article are the other tools he recommends to learn. Most
+						important in the list (in my opinion) is git and github.
+						Even working alone on a code is very convenient because
+						you have a backup of your code, even your complete
+						project. It gets even more convenient, if you use a
+						origin like github. You also get versioning in your
+						code, that means you can switch between different
+						branches, developing a new feature for example, and you
+						can get back to a earlier state of your code. But also
+						the other topics in Sandeep's list will give you a
+						general basis of web-development. Important of course
+						other topics like HTTP/HTTPS, Data Structures and
+						Algorithms. My personal choice is javascript, not only
+						because it's easy to learn (regarding to the LotR
+						overview), but also you got a bunch of possibilities to
+						work on later. My next decision will be which framework
+						I'm gonna to choose. Until then I will do my javascript
+						lessons and wonder what a hobbit 🧝‍ would do...
+					</p>
 					<a
-						href="https://codeburst.io/the-ultimate-2019-web-developer-roadmap-7d024cbe973a"
-						target="_blank"
-						rel="noopener noreferrer"
-						class="link"
+						href="/../joergOnline/blog.html"
+						class="btn btn-outline-secondary"
+						>back</a
 					>
-						<img
-							src="https://cdn-images-1.medium.com/max/1000/0*gGR5krlTE3RKHyZW.png"
-							alt="Front-End Developer Roadmap"
-							class="pic"
-						/>
-					</a>
-				</p>
-
-				<p class="reference">
-					source: codeburst.io
-				</p>
-				<br /><br /><br />
-				<p class="textBlog">
-					As you can see the blue path are the basics. Later, you can
-					choose between several orange branches. As he points out,
-					main decision will later be which framework to choose. The
-					three most known are React.js Angular and Vue.js. I will do
-					another blog post about which framework to choose later.
-					Interesting in Sandeep's article are the other tools he
-					recommends to learn. Most important in the list (in my
-					opinion) is .git and github. Even working alone on a code is
-					very convenient because:
-					<br /><br />
-				</p>
-				<ol>
-					<li class="textBlog">backup</li>
-				</ol>
-				<p class="textBlog">
-					a backup of your code, even your complete project. It gets
-					even more convenient, if you use a cloud remote git like
-					github.
-				</p>
-				<br />
-				<ol start="2">
-					<li class="textBlog">versioning</li>
-				</ol>
-				<p class="textBlog">
-					you get versioning in your code, that means you can switch
-					between different branches, developing a new feature for
-					example, and you can get back to a earlier state of your
-					code. (For a short overview I recommend this
-					<a
-						href="https://www.youtube.com/watch?v=SWYqp7iY_Tc&list=PL2ygOM0PqdO_pU5u5B3cukJl7o0MSmoPY&index=4&t=1725s"
-						target="_blank"
-						rel="noopener noreferrer"
-						class="link"
-						>video</a
-					>
-					from Traversy Media, he gives you a quick lesson about the
-					most important git commands).
-					<br /><br /><br />
-				</p>
-
-				<p class="textBlog">
-					But also the other topics in Sandeep's list will give you a
-					general basis of web-development. Important of course other
-					topics like
-					<strong>HTTP/HTTPS</strong>,
-					<strong>Data Structures</strong> and
-					<strong>Algorithms</strong>.<br />
-					My personal choice is javascript, not only because it's easy
-					to learn (regarding the LotR overview), but also you got a
-					bunch of possibilities to work on later. My next decision
-					will be which framework I'm gonna to choose. Until then I
-					will do my javascript lessons and wonder what a hobbit 🧝‍
-					would do...
-				</p>
-				<br />
-				<br />
-				<br />
-				<p class="textBlog">
-					<a href="../../blog.html">back to blog</a>
-				</p>
-			</div>
-
-			<!-- blog entry section end -->
-
-			<div class="copyright">
-				This is a classicair production &copy; 2019
+				</div>
 			</div>
 		</div>
-		<script src="../../script.js"></script>
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="/../joergOnline/javascript/jquery-3.4.1.min.js"></script>
+		<script src="/../joergOnline/javascript/popper.min.js"></script>
+		<script src="/../joergOnline/javascript/bootstrap.bundle.min.js"></script>
+		<script src="https://kit.fontawesome.com/54609de218.js"></script>
 	</body>
 </html>

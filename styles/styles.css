@@ -1,3 +1,4 @@
+/* change color on hover for social media in header */
 span .fab.fa-github:hover {
 	color: #211f1f;
 }
@@ -12,4 +13,20 @@ span .fab.fa-facebook-f:hover {
 }
 span .fas.fa-inbox:hover {
 	color: #d44638;
+}
+
+/* define color of social media in header */
+a > span > i {
+	color: #e9ecef;
+}
+
+/* change line height and font size of hashtag pills */
+.card-body .rounded-pill {
+	font-size: 0.8em;
+	line-height: 2.5em;
+}
+
+/* change font size of picture source */
+.card .card-body .text-right {
+	font-size: 0.6em;
 }
