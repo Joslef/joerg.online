@@ -1,116 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+		<!-- Bootstrap CSS -->
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="/joergOnline/css/styles.css" />
+		<title>joerg.online</title>
+	</head>
 
-<head>
-	<!-- Required meta tags -->
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="/styles/bootstrap.min.css" />
-	<link rel="stylesheet" href="/styles/styles.css" />
-	<title>joerg.online</title>
-</head>
+	<body>
+		<!-- navbar: https://getbootstrap.com/docs/4.3/components/navbar/ -->
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="/joergOnline/index.html"
+				><i class="fas fa-code"></i
+			></a>
+			<button
+				class="navbar-toggler"
+				type="button"
+				data-toggle="collapse"
+				data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			>
+				<span class="navbar-toggler-icon"></span>
+			</button>
 
-<body>
-	<!-- navbar: https://getbootstrap.com/docs/4.3/components/navbar/ -->
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		<a class="navbar-brand" href="/index.html"><i class="fas fa-code"></i></a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="/joergOnline/blog.html"
+							>blog<span class="sr-only">(current)</span></a
+						>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/joergOnline/tools.html"
+							>tools</a
+						>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/joergOnline/skills.html"
+							>skills</a
+						>
+					</li>
+				</ul>
+				<div class="form-inline my-2 my-lg-0">
+					<a class="nav-link pl-0" href="https://github.com/Joslef"
+						><span class="text-muted"
+							><i class="fab fa-github"></i> </span
+					></a>
+					<a class="nav-link" href="https://twitter.com/Joslef"
+						><span class="text-light">
+							<i class="fab fa-twitter"></i> </span
+					></a>
+					<a
+						class="nav-link"
+						href="https://www.linkedin.com/in/joergstoepel/"
+						><span class="text-secondary">
+							<i class="fab fa-linkedin-in"></i> </span
+					></a>
+					<a
+						class="nav-link"
+						href="https://www.facebook.com/joslef.baboneman"
+						><span class="text-secondary">
+							<i class="fab fa-facebook-f"></i> </span
+					></a>
+					<a
+						class="nav-link"
+						href="mailto:joerg.stoepel@googlemail.com"
+						><span class="text-secondary">
+							<i class="fas fa-inbox"></i> </span
+					></a>
+				</div>
+			</div>
+		</nav>
+		<div class="container my-3">
+			<div class="card shadow-sm my-5">
+				<div class="card-header text-right text-muted">
+					friday, 09/20/19
+				</div>
+				<div class="card-body">
+					<h5 class="h2 card-title mb-3">
+						#4 Complete rework of my page
+					</h5>
+					<span class="rounded-pill text-light bg-secondary px-2 py-1"
+						>#bootstrap</span
+					>
+					<span class="rounded-pill text-light bg-secondary px-2 py-1"
+						>#css</span
+					>
+					<span class="rounded-pill text-light bg-secondary px-2 py-1"
+						>#front-end library</span
+					>
 
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item active">
-					<a class="nav-link" href="#">blog<span class="sr-only">(current)</span></a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="/tools.html">tools</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="/skills.html">skills</a>
-				</li>
-			</ul>
-			<div class="form-inline my-2 my-lg-0">
-				<a class="nav-link pl-0" href="https://github.com/Joslef"><span class="text-muted"><i
-							class="fab fa-github"></i> </span></a>
-				<a class="nav-link" href="https://twitter.com/Joslef"><span class="text-light">
-						<i class="fab fa-twitter"></i> </span></a>
-				<a class="nav-link" href="https://www.linkedin.com/in/joergstoepel/"><span class="text-secondary">
-						<i class="fab fa-linkedin-in"></i> </span></a>
-				<a class="nav-link" href="https://www.facebook.com/joslef.baboneman"><span class="text-secondary">
-						<i class="fab fa-facebook-f"></i> </span></a>
-				<a class="nav-link" href="mailto:joerg.stoepel@googlemail.com"><span class="text-secondary">
-						<i class="fas fa-inbox"></i> </span></a>
+					<p class="card-text mb-3 mt-4">
+						A long time since my last post...
+					</p>
+					<a
+						href="/joergOnline/blog/190920/190920.html"
+						class="btn btn-outline-info"
+						>read</a
+					>
+				</div>
 			</div>
 		</div>
-	</nav>
-	<div class="container my-3">
-		<div class="card">
-			<div class="card-header text-right text-muted">
-				thursday, 05/02/19
-			</div>
-			<div class="card-body">
-				<h5 class="h2 card-title mb-3">
-					#3 What's your path on becoming a web-developer?
-				</h5>
-				<span class="rounded-pill text-light bg-secondary px-2 py-1">#javascript</span>
-				<span class="rounded-pill text-light bg-secondary px-2 py-1">#html</span>
-				<span class="rounded-pill text-light bg-secondary px-2 py-1">#css</span>
+		<div class="container my-3">
+			<div class="card shadow-sm my-5">
+				<div class="card-header text-right text-muted">
+					thursday, 05/02/19
+				</div>
+				<div class="card-body">
+					<h5 class="h2 card-title mb-3">
+						#3 What's your path on becoming a web-developer?
+					</h5>
+					<span class="rounded-pill text-light bg-secondary px-2 py-1"
+						>#javascript</span
+					>
+					<span class="rounded-pill text-light bg-secondary px-2 py-1"
+						>#html</span
+					>
+					<span class="rounded-pill text-light bg-secondary px-2 py-1"
+						>#css</span
+					>
 
-				<p class="card-text mb-3 mt-4">
-					As I mentioned on my homepage before...
-				</p>
-				<a href="/blog/190502/190502.html" class="btn btn-outline-info">read</a>
+					<p class="card-text mb-3 mt-4">
+						As I mentioned on my homepage before...
+					</p>
+					<a
+						href="/joergOnline/blog/190502/190502.html"
+						class="btn btn-outline-info"
+						>read</a
+					>
+				</div>
 			</div>
 		</div>
-	</div>
-	<div class="container my-3">
-		<div class="card">
-			<div class="card-header text-right text-muted">
-				tuesday, 04/30/19
-			</div>
-			<div class="card-body">
-				<h5 class="h2 card-title mb-3">
-					#2 Why simply start a webpage isn't always the best idea
-				</h5>
-				<span class="rounded-pill text-light bg-secondary px-2 py-1">#html</span>
-				<span class="rounded-pill text-light bg-secondary px-2 py-1">#css</span>
-				<span class="rounded-pill text-light bg-secondary px-2 py-1">#design</span>
-				<p class="card-text mb-3 mt-4">
-					Of course you wanna start and you wanna work on the
-					code...
-				</p>
-				<a href="/blog/190430/190430.html" class="btn btn-outline-info">read</a>
-			</div>
-		</div>
-	</div>
-	<div class="container my-3">
-		<div class="card">
-			<div class="card-header text-right text-muted">
-				monday, 04/29/19
-			</div>
-			<div class="card-body">
-				<h5 class="h2 card-title mb-3">
-					#1 How I got into the idea of learning to code
-				</h5>
-				<span class="rounded-pill text-light bg-secondary px-2 py-1">#javascript</span>
-				<span class="rounded-pill text-light bg-secondary px-2 py-1">#medium</span>
-				<span class="rounded-pill text-light bg-secondary px-2 py-1">#freecodecamp</span>
-				<p class="card-text mb-3 mt-4">
-					It must have been a day in october 2018...
-				</p>
-				<a href="/blog/190429/190429.html" class="btn btn-outline-info">read</a>
+		<div class="container my-3">
+			<div class="card shadow-sm my-5">
+				<div class="card-header text-right text-muted">
+					tuesday, 04/30/19
+				</div>
+				<div class="card-body">
+					<h5 class="h2 card-title mb-3">
+						#2 Why simply start a webpage isn't always the best idea
+					</h5>
+					<span class="rounded-pill text-light bg-secondary px-2 py-1"
+						>#html</span
+					>
+					<span class="rounded-pill text-light bg-secondary px-2 py-1"
+						>#css</span
+					>
+					<span class="rounded-pill text-light bg-secondary px-2 py-1"
+						>#design</span
+					>
+					<p class="card-text mb-3 mt-4">
+						Of course you wanna start and you wanna work on the
+						code...
+					</p>
+					<a
+						href="/joergOnline/blog/190430/190430.html"
+						class="btn btn-outline-info"
+						>read</a
+					>
+				</div>
 			</div>
 		</div>
-	</div>
-	<!-- Optional JavaScript -->
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="/javascript/jquery-3.4.1.min.js"></script>
-	<script src="/javascript/popper.min.js"></script>
-	<script src="/javascript/bootstrap.bundle.min.js"></script>
-	<script src="https://kit.fontawesome.com/54609de218.js"></script>
-</body>
-
+		<div class="container my-3">
+			<div class="card shadow-sm my-5">
+				<div class="card-header text-right text-muted">
+					monday, 04/29/19
+				</div>
+				<div class="card-body">
+					<h5 class="h2 card-title mb-3">
+						#1 How I got into the idea of learning to code
+					</h5>
+					<span class="rounded-pill text-light bg-secondary px-2 py-1"
+						>#javascript</span
+					>
+					<span class="rounded-pill text-light bg-secondary px-2 py-1"
+						>#medium</span
+					>
+					<span class="rounded-pill text-light bg-secondary px-2 py-1"
+						>#freecodecamp</span
+					>
+					<p class="card-text mb-3 mt-4">
+						It must have been a day in october 2018...
+					</p>
+					<a
+						href="/joergOnline/blog/190429/190429.html"
+						class="btn btn-outline-info"
+						>read</a
+					>
+				</div>
+			</div>
+		</div>
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script
+			src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+			integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+			crossorigin="anonymous"
+		></script>
+		<script src="https://kit.fontawesome.com/54609de218.js"></script>
+	</body>
 </html>

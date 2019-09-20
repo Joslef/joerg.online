@@ -30,3 +30,8 @@ a > span > i {
 .card .card-body .text-right {
 	font-size: 0.6em;
 }
+
+/* size of card thumbnails in tools section */
+.img-thumbnail {
+	height: 150px;
+}

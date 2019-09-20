@@ -1,98 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<!-- Required meta tags -->
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<title>let's learn javascript, html and css together</title>
 		<meta
-			name="description"
-			content="diary and interesting facts about how to learn to code"
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
 		/>
-		<meta property="og:url" content="https://www.joerg.online" />
-		<meta property="og:type" content="article" />
-		<meta property="og:title" content="welcome to joerg.online" />
-		<meta
-			property="og:description"
-			content="follow me on my journey on becoming a self-taught web developer"
-		/>
-		<meta property="og:image" content="pictures/header.jpg" />
-		<link rel="shortcut icon" type="image/png" href="icons/favicon.ico" />
-		<link href="/style.css" rel="stylesheet" type="text/css" />
+		<!-- Bootstrap CSS -->
 		<link
-			href="https://fonts.googleapis.com/css?family=Megrim|Quicksand"
 			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			crossorigin="anonymous"
 		/>
+		<link rel="stylesheet" href="/joergOnline/css/styles.css" />
+		<title>joerg.online</title>
 	</head>
 
-	<body class="dark">
-		<!-- sidepanel start -->
-		<div id="mySidenav" class="sidenav">
-			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-				>&times;</a
+	<body>
+		<!-- navbar: https://getbootstrap.com/docs/4.3/components/navbar/ -->
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="/joergOnline/index.html"
+				><i class="fas fa-code"></i
+			></a>
+			<button
+				class="navbar-toggler"
+				type="button"
+				data-toggle="collapse"
+				data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
 			>
-			<a href="index.html">Home</a>
-			<a href="blog.html">Blog</a>
-			<a href="tools.html">Tools</a>
-			<a href="skills.html">Skills</a>
-			<a href="mailto:joerg.stoepel@googlemail.com">Contact</a>
-		</div>
-		<!-- sidepanel end -->
+				<span class="navbar-toggler-icon"></span>
+			</button>
 
-		<!-- Add all page content inside the div with class "main" if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
-		<div id="main">
-			<!-- header start -->
-			<div>
-				<a
-					href="#"
-					onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')"
-					title="Dark/light"
-					id="darkmode"
-				>
-					🌑☀️</a
-				>
-			</div>
-			<div id="header">
-				<a href="#"
-					><div onclick="openNav()">
-						<div id="lines"></div>
-						<div id="lines"></div>
-						<div id="lines"></div></div
-				></a>
-				welcome to <span>🌴️</span> joerg.online
-			</div>
-			<!-- header end -->
-
-			<!-- My Coding Tools section start -->
-			<div class="section">
-				<h1><span>My Coding Tools</span></h1>
-				<ul>
-					<li><a href="https://repl.it">Repl.it</a></li>
-					<p>powerful playground for starting to code</p>
-					<br />
-					<li>
-						<a href="https://fonts.google.com/">Google Fonts</a>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="/joergOnline/blog.html"
+							>blog</a
+						>
 					</li>
-					<p>dont spend too much time on fonts</p>
-					<br />
-					<li><a href="https://www.w3schools.com/">w3schools</a></li>
-					<p>nice to look up with short examples</p>
-					<br />
-					<li>
-						<a href="https://www.freecodecamp.org/">freecodecamp</a>
+					<li class="nav-item active">
+						<a class="nav-link" href="/joergOnline/tools.html"
+							>tools<span class="sr-only">(current)</span></a
+						>
 					</li>
-					<p>this is where it all startet, please support them</p>
-					<br />
-					<li><a href="https://www.sololearn.com/">sololearn</a></li>
-					<p>small lessons like a game you can compete with others</p>
-					<br />
+					<li class="nav-item">
+						<a class="nav-link" href="/joergOnline/skills.html"
+							>skills</a
+						>
+					</li>
 				</ul>
+				<div class="form-inline my-2 my-lg-0">
+					<a class="nav-link pl-0" href="https://github.com/Joslef"
+						><span class="text-muted"
+							><i class="fab fa-github"></i> </span
+					></a>
+					<a class="nav-link" href="https://twitter.com/Joslef"
+						><span class="text-light">
+							<i class="fab fa-twitter"></i> </span
+					></a>
+					<a
+						class="nav-link"
+						href="https://www.linkedin.com/in/joergstoepel/"
+						><span class="text-secondary">
+							<i class="fab fa-linkedin-in"></i> </span
+					></a>
+					<a
+						class="nav-link"
+						href="https://www.facebook.com/joslef.baboneman"
+						><span class="text-secondary">
+							<i class="fab fa-facebook-f"></i> </span
+					></a>
+					<a
+						class="nav-link"
+						href="mailto:joerg.stoepel@googlemail.com"
+						><span class="text-secondary">
+							<i class="fas fa-inbox"></i> </span
+					></a>
+				</div>
 			</div>
-			<!-- My Coding Tools section end -->
-
-			<div class="copyright">
-				This is a classicair production &copy; 2019
-			</div>
-		</div>
-		<script src="script.js"></script>
+		</nav>
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-4 col-md-6">
+					<div class="row justify-content-center">
+						<div class="card my-3 shadow" style="width: 16rem;">
+							<div class="card-body shadow">
+								<h5 class="card-title">Visual Studio Code</h5>
+								<h6 class="card-subtitle mb-2 text-muted">
+									editor
+								</h6>
+								<p class="card-text">
+									The best editor out there. <br />
+									Period.
+								</p>
+								<a
+									href="https://code.visualstudio.com/"
+									class="card-link"
+									>link</a
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4 col-md-6">
+					<div class="row justify-content-center">
+						<div class="card my-3" style="width: 16rem;">
+							<div class="card-body shadow">
+								<h5 class="card-title">freeCodeCamp</h5>
+								<h6 class="card-subtitle mb-2 text-muted">
+									learning platform
+								</h6>
+								<p class="card-text">
+									First contact with coding. <br />
+									Easy start and a ton of exercises.
+								</p>
+								<a
+									href="https://www.freecodecamp.org/"
+									class="card-link"
+									>link</a
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4 col-md-6">
+					<div class="row justify-content-center">
+						<div class="card my-3" style="width: 16rem;">
+							<div class="card-body shadow">
+								<h5 class="card-title">git</h5>
+								<h6 class="card-subtitle mb-2 text-muted">
+									versioning system
+								</h6>
+								<p class="card-text">
+									Start to get familiar with a versioning
+									system as soon as possible.
+								</p>
+								<a href="https://git-scm.com/" class="card-link"
+									>link</a
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4 col-md-6">
+					<div class="row justify-content-center">
+						<div class="card my-3" style="width: 16rem;">
+							<div class="card-body shadow">
+								<h5 class="card-title">bootstrap 4</h5>
+								<h6 class="card-subtitle mb-2 text-muted">
+									front-end component library
+								</h6>
+								<p class="card-text">
+									This page is made with bootstrap 4.<br />
+									Accelerate your front-end creation by factor
+									10.
+								</p>
+								<a
+									href="https://getbootstrap.com/"
+									class="card-link"
+									>link</a
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4 col-md-6">
+					<div class="row justify-content-center">
+						<div class="card my-3" style="width: 16rem;">
+							<div class="card-body shadow">
+								<h5 class="card-title">Font Awesome</h5>
+								<h6 class="card-subtitle mb-2 text-muted">
+									vector icons
+								</h6>
+								<p class="card-text">
+									Get some pixel perfect icons.
+								</p>
+								<a
+									href="https://fontawesome.com/"
+									class="card-link"
+									>link</a
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4 col-md-6">
+					<div class="row justify-content-center">
+						<div class="card my-3" style="width: 16rem;">
+							<div class="card-body shadow">
+								<h5 class="card-title">Udemy</h5>
+								<h6 class="card-subtitle mb-2 text-muted">
+									online courses
+								</h6>
+								<p class="card-text">
+									Really good learning videos from
+									professionals. My recommandation for the
+									start: "The Web Developer Bootcamp" from
+									Colt Steele
+								</p>
+								<a
+									href="https://www.udemy.com/"
+									class="card-link"
+									>link</a
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4 col-md-6">
+					<div class="row justify-content-center">
+						<div class="card my-3" style="width: 16rem;">
+							<div class="card-body shadow">
+								<h5 class="card-title">Repl.it</h5>
+								<h6 class="card-subtitle mb-2 text-muted">
+									online coding platform
+								</h6>
+								<p class="card-text">
+									Perfect for your very first steps.<br />
+									Just open your browser and start coding.
+								</p>
+								<a href="https://repl.it/" class="card-link"
+									>link</a
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4 col-md-6">
+					<div class="row justify-content-center">
+						<div class="card my-3" style="width: 16rem;">
+							<div class="card-body shadow">
+								<h5 class="card-title">Prettier</h5>
+								<h6 class="card-subtitle mb-2 text-muted">
+									opinionated code formatter
+								</h6>
+								<p class="card-text">
+									Get the right formatting for your code.<br />
+									You never ever code without it.
+								</p>
+								<a href="https://prettier.io/" class="card-link"
+									>link</a
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4 col-md-6">
+					<div class="row justify-content-center">
+						<div class="card my-3" style="width: 16rem;">
+							<div class="card-body shadow">
+								<h5 class="card-title">Shades of Purple</h5>
+								<h6 class="card-subtitle mb-2 text-muted">
+									theme for vs code
+								</h6>
+								<p class="card-text">
+									Get some style.<br />
+									Best theme out there.
+								</p>
+								<a
+									href="https://marketplace.visualstudio.com/items?itemName=ahmadawais.shades-of-purple"
+									class="card-link"
+									>link</a
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script
+			src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+			integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+			crossorigin="anonymous"
+		></script>
+		<script src="https://kit.fontawesome.com/54609de218.js"></script>
 	</body>
 </html>
